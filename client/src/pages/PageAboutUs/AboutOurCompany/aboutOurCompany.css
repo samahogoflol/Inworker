@@ -1,0 +1,63 @@
+.inworker_company {
+  max-width: 1000px;
+  text-align: left;
+  margin-left: 431px;
+  margin-top: 50px;
+  font-size: 44px;
+}
+
+.cards_about_our {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  margin-top: 50px;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card_about_our {
+  border: solid;
+}
+
+.card_about_our p {
+  font-size: 15px;
+}
+
+.card_about_our_orange {
+  background-color: rgb(54, 185, 54);
+}
+
+.card_about_our_white {
+  background-color: rgb(177, 176, 176);
+}
+
+.card_about_our_black {
+  background-color: rgb(36, 35, 35);
+}
+
+.card_about_our_black,
+.card_about_our_orange,
+.card_about_our_white {
+  color: white;
+  border-radius: 25px;
+  height: 250px;
+  padding: 20px;
+}
+
+.title_inside_card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.get_free_consultation {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1080px;
+  height: 80px;
+  background-color: rgb(83, 228, 0);
+  border-style: none;
+  border-radius: 30px;
+  font-size: 28px;
+}

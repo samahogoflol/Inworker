@@ -1,0 +1,31 @@
+.marquee {
+  margin: 30px auto;
+  border: 1px solid #000;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+}
+
+.marquee_content {
+  display: flex;
+  font-size: 20px;
+  height: 30px;
+  width: 100%;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee_word {
+  margin-right: 30px;
+  font-size: 24px;
+  color: white;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

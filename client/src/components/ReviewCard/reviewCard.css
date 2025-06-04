@@ -1,0 +1,46 @@
+.review_spinner {
+  display: grid;
+  grid-template-columns: repeat(2, 650px);
+  gap: 50px;
+  justify-content: center;
+}
+
+.review_card {
+  border: solid;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.849);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  width: 650px;
+  padding: 25px;
+}
+
+.name_review {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  background-color: black;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  border: black;
+}
+
+.star_content {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.vacancy_name {
+    margin-bottom: 10px;
+}
+
+.btn_review_see_vacancy {
+  margin-top: 25px;
+  font-size: 22px;
+}
+

@@ -1,0 +1,104 @@
+.vacancy_grid {
+  justify-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 480px);
+}
+
+.header_vacancy {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.vacancy {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.card {
+  border: solid;
+  border-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  width: 370px;
+}
+
+.img {
+  margin-bottom: 10px;
+}
+
+.img img {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 7px;
+}
+
+.title {
+  margin-left: 20px;
+  margin-bottom: 15 px;
+}
+
+.card_discription li {
+  margin-bottom: 6px;
+  font-size: 15.5px;
+}
+
+.discription_list {
+  margin-left: 20px;
+}
+
+.discription_list li {
+  list-style-type: none;
+}
+
+.span_discroption {
+  font-weight: bold;
+}
+
+.span_discroption li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 95px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+.btn_look_all_vacancion {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.see_more_vacancies {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.input,
+select,
+button {
+  height: 40px;
+  width: 200px;
+}
+
+

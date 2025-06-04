@@ -1,0 +1,41 @@
+.section_about_us {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  text-align: left;
+}
+
+#features-heading {
+  font-size: 2.5em;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 1300px;
+  margin-left: 100px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature img {
+  width: 50px;
+  height: auto;
+}
+
+.feature h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 1em;
+}

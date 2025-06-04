@@ -1,0 +1,30 @@
+.way_to_work_with_us_title {
+  text-align: center;
+}
+
+.grid_way_to_work_with_us {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 250px);
+  gap: 50px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card_way_to_work_with_us {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  padding: 15px;
+  height: 160px;
+  width: 250px;
+  opacity: 0;
+  transform: translate(-150%);
+  transition: all 1s ease 0s;
+}
+
+._active_card_about_us {
+  opacity: 1;
+  transform: translate(0px, 0%);
+}
+
+

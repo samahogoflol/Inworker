@@ -1,0 +1,132 @@
+.container_appear_form h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.rewiev_form_appear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 750px;
+}
+
+.rewiev_form_appear input {
+  margin-bottom: 7px;
+  padding: 15px;
+  width: 600px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+
+.textarea_appear_rewiev_form {
+  padding: 15px;
+  width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+
+.container_appear_form select {
+  margin-top: 20px;
+  width: 600px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+
+.btn_send_rewiev {
+  height: 70px;
+  width: 600px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.container_appear_form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-size: 18px;
+  z-index: 20;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.popup-overlay_leave_rewiev {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  opacity: 1;
+}
+
+.btn_close_rewiev_appear {
+  position: relative;
+  top: 4%;
+  left: 69%;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 1;
+} */
+
+._hide_container_appear_form {
+  opacity: 1;
+}
+
+._hide_appear_close_btn {
+  opacity: 1;
+}
+
+.btn_send_rewiev:hover {
+  background-color: green;
+}
+
+.container_appear_form select:hover,
+.rewiev_form_appear input:hover,
+.textarea_appear_rewiev_form:hover {
+  opacity: 0.5;
+}
+
+.btn_close_rewiev_appear:hover {
+  opacity: 0.5;
+}
+
+.btn_close_rewiev_appear::before {
+  content: "";
+  position: absolute;
+  top: 29px;
+  left: 13px;
+  width: 35px;
+  height: 2px;
+  color: black;
+  background-color: black;
+  transform: rotate(0.13turn);
+}
+
+.btn_close_rewiev_appear::after {
+  content: "";
+  position: absolute;
+  top: 29px;
+  left: 13px;
+  width: 35px;
+  height: 2px;
+  color: black;
+  background-color: black;
+  transform: rotate(-0.13turn);
+}
+

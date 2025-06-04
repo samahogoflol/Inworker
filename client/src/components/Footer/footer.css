@@ -1,0 +1,93 @@
+nav {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  margin-top: 50px;
+  height: 400px;
+  background-color: rgb(23, 46, 46);
+}
+
+.nav_footer_socials {
+  font-size: 35px;
+}
+
+.footer_socials_block {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 15px;
+  gap: 20px;
+}
+
+.nav_footer_socials img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.nav_list_footer {
+  font-size: 25px;
+}
+
+.nav_list_footer li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.nav_contact {
+  font-size: 25px;
+}
+
+.nav_contact li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.privacy_policy {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(23, 46, 46);
+}
+
+.avtor_policy {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(23, 46, 46);
+  border-radius: 50%;
+}
+
+.avtor_policy::before {
+  position: absolute;
+  top: 5.5px;
+  left: 9.5px;
+  content: "C";
+  color: grey;
+}
+
+.avtor_policy::after {
+  position: absolute;
+  top: 3.5px;
+  left: 4.4px;
+  content: "";
+  border: solid;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border-width: 2px;
+  color: grey;
+}
+
+.text_privacy_policy {
+  margin-top: 4px;
+  font-size: larger;
+  opacity: 0.8;
+}

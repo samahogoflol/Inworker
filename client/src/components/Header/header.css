@@ -1,0 +1,31 @@
+.app_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  background-color: rgb(23, 46, 46);
+}
+
+.app_header h2 {
+  font-size: 30px;
+}
+
+.nav_header {
+  display: flex;
+  align-items: center;
+}
+
+.nav_list_header {
+  margin-left: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_header li {
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+.nav_header img {
+  margin-left: 15px;
+}

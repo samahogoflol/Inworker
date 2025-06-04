@@ -1,0 +1,160 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel_img {
+  border-radius: 5%;
+  margin-top: 20px;
+}
+
+.see_all_reviews {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  width: 300px;
+  height: 50px;
+  border-radius: 15%;
+}
+
+.left_btn {
+  position: absolute;
+  left: 25px;
+  top: -220px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+}
+
+.right_btn {
+  position: absolute;
+  right: 25px;
+  top: -220px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+}
+
+.right_btn::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(0.1turn);
+}
+
+.right_btn::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 16px;
+  width: 20px;
+  height: 2px;
+  transform: rotate(-0.1turn);
+  background-color: black;
+}
+
+.left_btn::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 11px;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(-0.6turn);
+}
+
+.left_btn::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 11px;
+  width: 20px;
+  height: 2px;
+  transform: rotate(0.6turn);
+  background-color: black;
+}
+
+.left_btn:hover,
+.right_btn:hover {
+  opacity: 1;
+}
+
+/* нижче стилі, які передаються пропсами в інший компонент (відображення фото на VacancyPage) */
+
+.center-buttons-carousel .left_btn {
+  position: absolute;
+  left: 25px;
+  top: -180px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+}
+
+.center-buttons-carousel .right_btn {
+  position: absolute;
+  right: 25px;
+  top: -180px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+}
+
+.center-buttons-carousel .left_btn:hover,
+.center-buttons-carousel .right_btn:hover {
+  opacity: 1;
+}
+
+/* нижче стилі, які передаються пропсами в інший компонент (відображення відгуків на VacancyPage)*/
+
+.center-buttons-carousel_rewievs .left_btn {
+  position: absolute;
+  left: 25px;
+  top: -180px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  opacity: 0.3;
+}
+
+.center-buttons-carousel_rewievs .right_btn {
+  position: absolute;
+  left: 685px;
+  top: -180px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  opacity: 0.3;
+}
+
+.center-buttons-carousel_rewievs .left_btn:hover,
+.center-buttons-carousel_rewievs .right_btn:hover {
+  opacity: 1;
+}
