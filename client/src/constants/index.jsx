@@ -48,7 +48,6 @@ export const allVacancies = [
       review:
         "Дякую за допомогу з пошуком роботи! Менеджери завжди на зв’язку, допомагали на кожному етапі. Житло чисте та зручне, а умови на роботі навіть кращі, ніж очікувала. Дуже задоволена та рекомендую!",
     },
-    id: 0,
     title: "Пакування автомобільних фар",
     pageTitle: " ✨ Запрошуємо на вакансію : Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW' ✨ ",
     img: {
@@ -62,7 +61,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -80,7 +79,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -95,7 +94,6 @@ export const allVacancies = [
       review:
         "Все пройшло просто чудово! Переїзд, оформлення документів та поселення – все швидко та без проблем. Робота цікава, колектив доброзичливий. Моя подяка менеджерам за підтримку!",
     },
-    id: 1,
     title: "Пакування свічок",
     pageTitle: " ✨ Запрошуємо на вакансію : Виготовлення свічок та ароматизаторів ✨",
     img: {
@@ -109,7 +107,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -125,7 +123,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -140,7 +138,6 @@ export const allVacancies = [
       review:
         "Все дуже сподобалося! Завдяки команді швидко оформили документи, допомогли з транспортом і поселенням. На роботу вийшов уже наступного тижня. Компанія та умови проживання — супер. Дуже вдячний!",
     },
-    id: 2,
     title: "Пакування одягу",
     pageTitle: " ✨ Запрошуємо на вакансію : Пакування одягу на сучайний склад! ✨ ",
     img: {
@@ -154,7 +151,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -170,7 +167,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -185,7 +182,6 @@ export const allVacancies = [
       review:
         "Рекомендую цю компанію! Підтримка від менеджерів була на кожному етапі, а житло — комфортне та з усіма зручностями. Почала працювати на складі, і все відповідає опису вакансії. Дякую за чудову організацію!",
     },
-    id: 3,
     title: "Пакування кондитерських виробів",
     pageTitle: " ✨ Запрошуємо на вакансію : Виготовлення та пакування кондитерських виробів ✨ ",
     img: {
@@ -199,7 +195,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -215,7 +211,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -230,7 +226,6 @@ export const allVacancies = [
       review:
         "Дуже задоволений вибором компанії для роботи в Польщі! Мене оформили швидко, підтримка менеджерів на висоті. Житло дуже комфортне, а умови праці відмінні. Рекомендую!",
     },
-    id: 4,
     title: "Пакування чаю та кави",
     pageTitle: "✨ Запрошуємо на вакансію : Пакування чаю та кави ✨",
     img: {
@@ -238,13 +233,13 @@ export const allVacancies = [
       vacancyFoto: instantaMain,
     },
     name: "Instanta",
-    city: "Żory (50 км від Катовіце)", 
+    city: "Żory (50 км від Катовіце)",
     contract: "Umowa zlecenia",
     salary: {
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -260,7 +255,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -275,7 +270,6 @@ export const allVacancies = [
       review:
         "Чудова підтримка від менеджерів, які надають допомогу на всіх етапах. Оформлення пройшло легко, робота і житло відповідають обіцянкам. Співпрацею дуже задоволений!",
     },
-    id: 5,
     title: "Пакування лосося",
     pageTitle: " ✨ Запрошуємо на вакансію : Пакувальник червоної риби ✨ ",
     img: {
@@ -289,7 +283,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -305,7 +299,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -320,7 +314,6 @@ export const allVacancies = [
       review:
         "Робота з цією компанією — одне задоволення! Менеджери дійсно піклуються про працівників, допомогли з документами та квитками. Житло комфортне, робота цікава. Дякую!",
     },
-    id: 6,
     title: "Виготовлення побутової техніки",
     pageTitle: " ✨ Запрошуємо на вакансію : Виготовлення побутової техніки ✨",
     img: {
@@ -334,7 +327,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -351,7 +344,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "Безкоштовний робочий одяг : 2 футболки, штани, кофти, рукавички, зручне робоче взуття 👕",
     },
@@ -366,7 +359,6 @@ export const allVacancies = [
       review:
         "Дякую за чудову організацію роботи в Польщі! З менеджерами завжди на зв’язку, вони відповіли на всі мої питання. Робота подобається, житло чисте та сучасне. Рекомендую!",
     },
-    id: 7,
     title: "Виготовлення паркетної дошки",
     pageTitle: " ✨ Запрошуємо на вакансію : Виробництво паркетних дошок. Світовий лідер виробництва в цій галузі ✨ ",
     img: {
@@ -380,7 +372,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -397,7 +389,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, штани, рукавички, зручне робоче взуття) 👕",
     },
@@ -412,7 +404,6 @@ export const allVacancies = [
       review:
         "Дякую за допомогу з пошуком роботи! Менеджери завжди на зв’язку, допомагали на кожному етапі. Житло чисте та зручне, а умови на роботі навіть кращі, ніж очікувала. Дуже задоволена та рекомендую!",
     },
-    id: 8,
     title: "Пакування лампочок 'Philips'",
     pageTitle: " ✨ Запрошуємо на роботу: Пакувальник лампочок та освітлювальних елементів ✨ ",
     img: {
@@ -426,7 +417,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -442,7 +433,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -457,7 +448,6 @@ export const allVacancies = [
       review:
         "Рекомендую цю компанію! Все пройшло гладко, умови праці хороші, і житло відповідає опису. Дякую менеджерам за оперативність і постійну підтримку!",
     },
-    id: 9,
     title: "Виготовлення та пакування деталей до автомобілей",
     pageTitle: " ✨ Запрошуємо на роботу: Пакувальник автомобільних деталей (ручки, зажими, двірники, емблеми і т.п.) ✨ ",
     img: {
@@ -471,7 +461,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -487,7 +477,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -502,7 +492,6 @@ export const allVacancies = [
       review:
         "Нарешті знайшла роботу за кордоном, де все організовано як слід! Кожен етап — від оформлення документів до поселення — пройшов легко. Дякую за підтримку та чесний підхід!",
     },
-    id: 10,
     title: "Пакування кондитерських виробів",
     pageTitle: " ✨ Запрошуємо на роботу: Пакування кондитерських виробів ✨ ",
     img: {
@@ -516,7 +505,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -532,7 +521,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -547,7 +536,6 @@ export const allVacancies = [
       review:
         "Не очікував, що все буде настільки просто. Мені допомогли з усім — від документів до адаптації на місці. Робота нормальна, житло — комфортне. Рекомендую тим, хто шукає надійну підтримку за кордоном.",
     },
-    id: 11,
     title: "Карщик UDT",
     pageTitle: " ✨ Запрошуємо на роботу карщиків з правами UDT. Досвід не обов’язковий ✨ ",
     img: {
@@ -561,7 +549,7 @@ export const allVacancies = [
       salaryPerHour: "29.5 ZL нетто/годину💸 (Від 70.000 грн на місяць)",
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -577,7 +565,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, штани, робоче взуття) 👕",
     },
@@ -591,7 +579,6 @@ export const allVacancies = [
       vacancy: "Valeo",
       review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
     },
-    id: 12,
     aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
     title: "Пакування автомобільних фар",
     pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
@@ -606,7 +593,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -622,7 +609,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -636,7 +623,6 @@ export const allVacancies = [
       vacancy: "Valeo",
       review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
     },
-    id: 13,
     aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
     title: "Пакування автомобільних фар",
     pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
@@ -651,7 +637,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -667,7 +653,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -681,7 +667,6 @@ export const allVacancies = [
       vacancy: "Valeo",
       review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
     },
-    id: 14,
     aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
     title: "Пакування автомобільних фар",
     pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
@@ -696,7 +681,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -712,7 +697,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -726,7 +711,6 @@ export const allVacancies = [
       vacancy: "Valeo",
       review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
     },
-    id: 15,
     aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
     title: "Пакування автомобільних фар",
     pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
@@ -741,7 +725,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -757,7 +741,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -771,7 +755,6 @@ export const allVacancies = [
       vacancy: "Valeo",
       review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
     },
-    id: 16,
     aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
     title: "Пакування автомобільних фар",
     pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
@@ -786,7 +769,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -802,7 +785,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
@@ -816,7 +799,6 @@ export const allVacancies = [
       vacancy: "Valeo",
       review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
     },
-    id: 17,
     aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
     title: "Пакування автомобільних фар",
     pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
@@ -831,7 +813,7 @@ export const allVacancies = [
       salaryPerHour: salaryZlecenia,
       studentsSalary: studentsSalary,
       salaryPerMonth: salaryUmowaOPrace,
-      nigth: "+20% до ставки 🌙",
+      night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
@@ -847,7 +829,7 @@ export const allVacancies = [
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {
       gender: "Чоловіки, Жінки, Пари 👩",
-      expirience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
+      experience: "Беремо кандидатів навіть без досвіду роботи в Польщі 🌱",
       proficiency: "Не обов’язково",
       added: "БЕЗКОШТОВНИЙ робочий одяг (футболка, перчатки, робоче взуття) 👕",
     },
