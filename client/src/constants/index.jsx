@@ -1,39 +1,3 @@
-import valeoMain from "../images/vacanciesMainImg/valeoMain.jpg";
-import valeoRoom from "../images/hostelsFoto/valeo/valeoRoom.png";
-import valeoRoom1 from "../images/hostelsFoto/valeo/valeoRoom1.png";
-import valeoRoom2 from "../images/hostelsFoto/valeo/valeoRoom2.png";
-
-import bolsiusMain from "../images/vacanciesMainImg/bolsiusMain.jpg";
-import bolsiusroom from "../images/hostelsFoto/bolsius/room1.png";
-import bolsiusroom1 from "../images/hostelsFoto/bolsius/room2.jpg";
-
-import magniceMain from "../images/vacanciesMainImg/magniceMain.jpg";
-import magniceRoom from "../images/hostelsFoto/magnice/magniceRoom1.png";
-import magniceRoom1 from "../images/hostelsFoto/magnice/magniceRoom2.png";
-import magniceRoom2 from "../images/hostelsFoto/magnice/magniceRoom3.png";
-
-import mondelezMain from "../images/vacanciesMainImg/mondelezMain.jpg";
-
-import instantaMain from "../images/vacanciesMainImg/instantaMain.jpg";
-
-import fishPackingMain from "../images/vacanciesMainImg/fishPackingMain.jpg";
-
-import whirpoolLodzMain from "../images/vacanciesMainImg/whirpoolLodzMain.jpg";
-
-import barlinekMain from "../images/vacanciesMainImg/barlinekMain.jpg";
-
-import philipsMain from "../images/vacanciesMainImg/philipsMain.jpg";
-
-import normaGroupMain from "../images/vacanciesMainImg/normaGroupMain.jpg";
-
-import wedelMain from "../images/vacanciesMainImg/wedelMain.jpg";
-
-import wroclawUDT from "../images/vacanciesMainImg/wroclawUDT.jpg";
-
-import reviewMlawa1 from "../images/reviews/lgMlawa/reviewMlawa1.jpg";
-import reviewMlawa2 from "../images/reviews/lgMlawa/reviewMlawa2.jpg";
-import reviewMlawa3 from "../images/reviews/lgMlawa/reviewMlawa3.jpg";
-
 const salaryZlecenia = "26.4 ZL нетто/годину💸 (Від 60.000 грн на місяць)";
 const salaryUmowaOPrace = "4600 ZL/brutto в місяць💸 (Від 60.000 грн на місяць)";
 const studentsSalary = "30.5 ZL нетто/годину💸 (від 70.000 грн на місяць)";
@@ -42,7 +6,7 @@ export const allVacancies = [
   {
     rewievs: {
       name: "Катерина",
-      images: [reviewMlawa1, reviewMlawa2, reviewMlawa3],
+      images: [],
       date: "11.01.2025",
       vacancy: "Valeo",
       review:
@@ -51,16 +15,16 @@ export const allVacancies = [
     title: "Пакування автомобільних фар",
     pageTitle: " ✨ Запрошуємо на вакансію : Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW' ✨ ",
     img: {
-      hostelFoto: [valeoRoom, valeoRoom1, valeoRoom2],
-      vacancyFoto: valeoMain,
+      hostelFoto: [],
+      vacancyFoto: [],
     },
     name: "Valeo",
     city: "Chrzanów (30 км від Краків)",
     contract: "Umowa o pracę",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -89,7 +53,7 @@ export const allVacancies = [
     rewievs: {
       name: "Наталія",
       images: [],
-      date: "08.12.2023",
+      date: "08.12.2024",
       vacancy: " 'Bolsius' - виготовлення свічок",
       review:
         "Все пройшло просто чудово! Переїзд, оформлення документів та поселення – все швидко та без проблем. Робота цікава, колектив доброзичливий. Моя подяка менеджерам за підтримку!",
@@ -97,16 +61,16 @@ export const allVacancies = [
     title: "Пакування свічок",
     pageTitle: " ✨ Запрошуємо на вакансію : Виготовлення свічок та ароматизаторів ✨",
     img: {
-      hostelFoto: [bolsiusroom, bolsiusroom1],
-      vacancyFoto: bolsiusMain,
+      hostelFoto: [],
+      vacancyFoto: [],
     },
     name: "Bolsius",
     city: "Krotoszyn (120 км від Вроцлав)",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -131,26 +95,26 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Анна",
       images: [],
-      date: "14.04.2022",
+      date: "27.09.2024",
       vacancy: "' Пакування одягу 'Nike' ",
       review:
-        "Все дуже сподобалося! Завдяки команді швидко оформили документи, допомогли з транспортом і поселенням. На роботу вийшов уже наступного тижня. Компанія та умови проживання — супер. Дуже вдячний!",
+        "Все дуже сподобалося! Завдяки команді швидко оформили документи, допомогли з транспортом і поселенням. На роботу вийшла уже наступного тижня. Компанія та умови проживання — супер. Дуже вдячна!",
     },
     title: "Пакування одягу",
     pageTitle: " ✨ Запрошуємо на вакансію : Пакування одягу на сучайний склад! ✨ ",
     img: {
-      hostelFoto: [magniceRoom, magniceRoom1, magniceRoom2],
-      vacancyFoto: magniceMain,
+      hostelFoto: [],
+      vacancyFoto: [],
     },
     name: "H&M",
     city: "Wrocław ",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -175,26 +139,26 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Степан",
       images: [],
       date: "14.04.2022",
       vacancy: "Mondelez - пакування кондитерських виробів",
       review:
-        "Рекомендую цю компанію! Підтримка від менеджерів була на кожному етапі, а житло — комфортне та з усіма зручностями. Почала працювати на складі, і все відповідає опису вакансії. Дякую за чудову організацію!",
+        "Рекомендую цю компанію! Підтримка від менеджерів була на кожному етапі, а житло — комфортне та з усіма зручностями. Почав працювати на пакування цукерок, і все відповідає опису вакансії. Дякую за чудову організацію!",
     },
     title: "Пакування кондитерських виробів",
     pageTitle: " ✨ Запрошуємо на вакансію : Виготовлення та пакування кондитерських виробів ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: mondelezMain,
+      vacancyFoto: [],
     },
     name: "Mondelez",
     city: "Skarbimierz (60 км від Вроцлав)",
     contract: "Umowa o pracę",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -222,23 +186,23 @@ export const allVacancies = [
       name: "Наталія",
       images: [],
       date: "28.11.2024",
-      vacancy: " Instanta - пакування чаю та кави",
+      vacancy: "Instanta - пакування чаю та кави",
       review:
-        "Дуже задоволений вибором компанії для роботи в Польщі! Мене оформили швидко, підтримка менеджерів на висоті. Житло дуже комфортне, а умови праці відмінні. Рекомендую!",
+        "Дуже задоволена вибором компанії для роботи в Польщі! Мене оформили швидко, підтримка менеджерів на висоті. Житло дуже комфортне, а умови праці відмінні. Була приємно вражена. Рекомендую!",
     },
     title: "Пакування чаю та кави",
     pageTitle: "✨ Запрошуємо на вакансію : Пакування чаю та кави ✨",
     img: {
       hostelFoto: [],
-      vacancyFoto: instantaMain,
+      vacancyFoto: [],
     },
     name: "Instanta",
     city: "Żory (50 км від Катовіце)",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -268,21 +232,21 @@ export const allVacancies = [
       date: "13.04.2025",
       vacancy: "Graal",
       review:
-        "Чудова підтримка від менеджерів, які надають допомогу на всіх етапах. Оформлення пройшло легко, робота і житло відповідають обіцянкам. Співпрацею дуже задоволений!",
+        "Чудова підтримка від менеджерів, які надають допомогу на всіх етапах. Оформлення пройшло легко, робота і житло відповідає обіцянкам. Співпрацею дуже задоволений!",
     },
     title: "Пакування лосося",
     pageTitle: " ✨ Запрошуємо на вакансію : Пакувальник червоної риби ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: fishPackingMain,
+      vacancyFoto: [],
     },
     name: "Graal",
     city: "Slupsk",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -318,15 +282,15 @@ export const allVacancies = [
     pageTitle: " ✨ Запрошуємо на вакансію : Виготовлення побутової техніки ✨",
     img: {
       hostelFoto: [],
-      vacancyFoto: whirpoolLodzMain,
+      vacancyFoto: [],
     },
     name: "Whirpool",
     city: "Lodz",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -357,21 +321,21 @@ export const allVacancies = [
       date: "09.05.2025",
       vacancy: "Barlinek",
       review:
-        "Дякую за чудову організацію роботи в Польщі! З менеджерами завжди на зв’язку, вони відповіли на всі мої питання. Робота подобається, житло чисте та сучасне. Рекомендую!",
+        "Дякую за чудову організацію роботи в Польщі! З менеджерами завжди на зв’язку, вони відповіли на всі мої питання. Робота подобається, житло чисте та сучасне.",
     },
     title: "Виготовлення паркетної дошки",
     pageTitle: " ✨ Запрошуємо на вакансію : Виробництво паркетних дошок. Світовий лідер виробництва в цій галузі ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: barlinekMain,
+      vacancyFoto: [],
     },
     name: "Barlinek",
     city: "Barlinek (30 км від Гожув Великопольскій)",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -402,21 +366,21 @@ export const allVacancies = [
       date: "22.04.2025",
       vacancy: "Philips",
       review:
-        "Дякую за допомогу з пошуком роботи! Менеджери завжди на зв’язку, допомагали на кожному етапі. Житло чисте та зручне, а умови на роботі навіть кращі, ніж очікувала. Дуже задоволена та рекомендую!",
+        "Найкраща компанія, з якою співпрацював! Житло чисте, сучасне, робота близько. Менеджер був дуже уважний, допоміг вирішити всі питання. Рекомендую усім, хто хоче працювати в Польщі",
     },
     title: "Пакування лампочок 'Philips'",
     pageTitle: " ✨ Запрошуємо на роботу: Пакувальник лампочок та освітлювальних елементів ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: philipsMain,
+      vacancyFoto: [],
     },
     name: "Philips",
     city: "Ketzin (250 км від Варшави)",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -446,21 +410,21 @@ export const allVacancies = [
       date: "18.02.2025",
       vacancy: "Norma Group",
       review:
-        "Рекомендую цю компанію! Все пройшло гладко, умови праці хороші, і житло відповідає опису. Дякую менеджерам за оперативність і постійну підтримку!",
+        "Рекомендую цю компанію! Все пройшло гладко, умови праці хороші, і житло відповідає опису. Окремо дякую менеджерам за оперативність і постійну підтримку!",
     },
     title: "Виготовлення та пакування деталей до автомобілей",
     pageTitle: " ✨ Запрошуємо на роботу: Пакувальник автомобільних деталей (ручки, зажими, двірники, емблеми і т.п.) ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: normaGroupMain,
+      vacancyFoto: [],
     },
     name: "Norma Group",
     city: " Pilica (50 км від Катовіце)",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -490,21 +454,21 @@ export const allVacancies = [
       date: "04.11.2024",
       vacancy: "Wedel",
       review:
-        "Нарешті знайшла роботу за кордоном, де все організовано як слід! Кожен етап — від оформлення документів до поселення — пройшов легко. Дякую за підтримку та чесний підхід!",
+        "Нарешті знайшов роботу за кордоном, де все організовано як слід! Кожен етап — від оформлення документів до поселення — пройшов легко. Дякую за підтримку та чесний підхід!",
     },
     title: "Пакування кондитерських виробів",
     pageTitle: " ✨ Запрошуємо на роботу: Пакування кондитерських виробів ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: wedelMain,
+      vacancyFoto: [],
     },
-    name: "Valeo",
+    name: "Wedel",
     city: "Warszawa",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -540,15 +504,15 @@ export const allVacancies = [
     pageTitle: " ✨ Запрошуємо на роботу карщиків з правами UDT. Досвід не обов’язковий ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: wroclawUDT,
+      vacancyFoto: [],
     },
     name: "Pantos UDT",
     city: "Wrocław",
     contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: "29.5 ZL нетто/годину💸 (Від 70.000 грн на місяць)",
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
@@ -573,37 +537,37 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Ігор",
       images: [],
-      date: "14.04.2022",
-      vacancy: "Valeo",
-      review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
+      date: "19.08.2024",
+      vacancy: " Автомобільний завод ZF ",
+      review:
+        "Сервіс чудовий, менеджери відповідальні та завжди на зв'язку. На місці нас зустріли, все показали, пояснили. Житло хороше, з усіма умовами для комфортного проживання. На роботу вийшов швидко і дуже задоволений!",
     },
-    aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
-    title: "Пакування автомобільних фар",
-    pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
+    title: "Комплектація рульової системи автомобіля",
+    pageTitle: "✨ Запрошуємо на роботу : Працівників на лінію. Потрібно збирати рульові системи для автомобілів ✨ ",
     img: {
       hostelFoto: [],
-      vacancyFoto: valeoMain,
+      vacancyFoto: [],
     },
-    name: "Valeo",
-    city: "Chrzanów (30 км від Краків)",
-    contract: "Umowa o pracę",
+    name: "Czechowice-Dziedzice",
+    city: "Czechowice-Dziedzice (50 км від Катовіце)",
+    contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
-      firstProcess: " Сортування, маркування, упаковка одягу 📦",
-      secondProcess: " Збір та комплектація замовлень 🧺",
-      thirdProcess: " Розпаковка/перепаковка товару 📥",
-      fourthProcess: " Розміщення товарів на полицях, вішалках 🗂️",
+      firstProcess: " Монтаж колон, планок, систем безпеки 📦",
+      secondProcess: " Контроль якості деталей 🔍",
+      thirdProcess: "",
+      fourthProcess: "",
       fifthProcess: "",
     },
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
@@ -617,37 +581,38 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Катя",
       images: [],
-      date: "14.04.2022",
-      vacancy: "Valeo",
-      review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
+      date: "07.05.2024",
+      vacancy: "Pol Plast",
+      review:
+        "Співпрацею дуже задоволений. Умови на роботі точно відповідають опису, а житло просторе та комфортне. Дуже вдячний менеджерам за терпіння та професійність!",
     },
-    aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
-    title: "Пакування автомобільних фар",
-    pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
+    title: " Пакування підводних масок",
+    pageTitle: "✨ Запрошуємо на роботу : Пакувальник підводних масок ✨",
     img: {
       hostelFoto: [],
-      vacancyFoto: valeoMain,
+      vacancyFoto: [],
     },
-    name: "Valeo",
-    city: "Chrzanów (30 км від Краків)",
-    contract: "Umowa o pracę",
+    name: "Pol Plast",
+    city: " Myślenice (30 км від Краків)",
+    contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
-      firstProcess: " Сортування, маркування, упаковка одягу 📦",
-      secondProcess: " Збір та комплектація замовлень 🧺",
-      thirdProcess: " Розпаковка/перепаковка товару 📥",
-      fourthProcess: " Розміщення товарів на полицях, вішалках 🗂️",
+      firstProcess:
+        " Комплектування масок (маски на лінії їдуть в розібраному вигляді, кожен працівник займається з'єднанням певних деталей) ✅",
+      secondProcess: " Візуальний контроль якості 🔍",
+      thirdProcess: " Пакування готової продукції. Цей процес виконується сидячи 📥",
+      fourthProcess: "",
       fifthProcess: "",
     },
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
@@ -661,37 +626,37 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Маша",
       images: [],
-      date: "14.04.2022",
-      vacancy: "Valeo",
-      review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
+      date: "10.01.2025",
+      vacancy: "Adient",
+      review:
+        "Залишилася задоволена співпрацею! Мене зустріли, все пояснили та підтримували на кожному кроці. Житло комфортне, а умови роботи такі, як обіцяли. Дякую команді за турботу",
     },
-    aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
-    title: "Пакування автомобільних фар",
-    pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
+    title: "Виготовлення автомобільних сидінь",
+    pageTitle: "✨ Запрошуємо на роботу : Виробництво автомобільних сидінь ✨",
     img: {
       hostelFoto: [],
-      vacancyFoto: valeoMain,
+      vacancyFoto: [],
     },
-    name: "Valeo",
-    city: "Chrzanów (30 км від Краків)",
+    name: "Adient",
+    city: "Świebodzin (110 км від Познань)",
     contract: "Umowa o pracę",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
-      firstProcess: " Сортування, маркування, упаковка одягу 📦",
-      secondProcess: " Збір та комплектація замовлень 🧺",
-      thirdProcess: " Розпаковка/перепаковка товару 📥",
-      fourthProcess: " Розміщення товарів на полицях, вішалках 🗂️",
+      firstProcess: " Вставити деталь, перевірити, передати далі 🔧",
+      secondProcess: " Складання/Монтаж – електроінструмент 🔧",
+      thirdProcess: " Упаковка – вкласти у контейнер, наклеїти етикетку 🗂️",
+      fourthProcess: "",
       fifthProcess: "",
     },
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
@@ -705,37 +670,37 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Світлана",
       images: [],
-      date: "14.04.2022",
-      vacancy: "Valeo",
-      review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
+      date: "17.04.2024",
+      vacancy: "Виробництво устілок для взуття",
+      review:
+        "Дуже вдячна за допомогу з пошуком роботи! Менеджери — справжні професіонали, завжди були на зв’язку і все чітко пояснили. Житло чисте, комфортне, навіть краще, ніж очікувала. На роботі — чудовий колектив і гарні умови. Буду рекомендувати всім знайомим",
     },
-    aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
-    title: "Пакування автомобільних фар",
-    pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
+    title: "Виробництво устілок для взуття!",
+    pageTitle: "✨ Запрошуємо на роботу : Виробництво та пакування устілок для взуття! ✨",
     img: {
       hostelFoto: [],
-      vacancyFoto: valeoMain,
+      vacancyFoto: [],
     },
-    name: "Valeo",
-    city: "Chrzanów (30 км від Краків)",
-    contract: "Umowa o pracę",
+    name: "Jorno",
+    city: "Jaworzno (18 км від Katowice)",
+    contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
-      firstProcess: " Сортування, маркування, упаковка одягу 📦",
-      secondProcess: " Збір та комплектація замовлень 🧺",
-      thirdProcess: " Розпаковка/перепаковка товару 📥",
-      fourthProcess: " Розміщення товарів на полицях, вішалках 🗂️",
+      firstProcess: " Обрізання зайвих частинок тканини ✂️",
+      secondProcess: " Контроль якості 🔍 ",
+      thirdProcess: " Пакування у коробки 📦",
+      fourthProcess: "",
       fifthProcess: "",
     },
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
@@ -749,37 +714,37 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Георгій",
       images: [],
-      date: "14.04.2022",
-      vacancy: "Valeo",
-      review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
+      date: "21.03.2025",
+      vacancy: " Виробництво косметики ",
+      review:
+        "Я вперше працюю за кордоном і трохи хвилювався, але менеджери допомогли з усіма питаннями, навіть із побутовими дрібницями. Житло чудове, є всі необхідні умови, а на підприємстві привітний колектив. Дякую за турботу та професійний підхід!",
     },
-    aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
-    title: "Пакування автомобільних фар",
-    pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
+    title: "Пакування косметики",
+    pageTitle: "✨ Запрошуємо на роботу : Пакувальник косметики ✨",
     img: {
       hostelFoto: [],
-      vacancyFoto: valeoMain,
+      vacancyFoto: [],
     },
-    name: "Valeo",
-    city: "Chrzanów (30 км від Краків)",
-    contract: "Umowa o pracę",
+    name: "Nuko",
+    city: "Garwolin (50 км від Варшава)",
+    contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
-      firstProcess: " Сортування, маркування, упаковка одягу 📦",
-      secondProcess: " Збір та комплектація замовлень 🧺",
-      thirdProcess: " Розпаковка/перепаковка товару 📥",
-      fourthProcess: " Розміщення товарів на полицях, вішалках 🗂️",
+      firstProcess: " Сортування, маркування, упаковка косметики 💄",
+      secondProcess: " Візуальний контроль якості 🛂",
+      thirdProcess: "",
+      fourthProcess: "",
       fifthProcess: "",
     },
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
@@ -793,38 +758,38 @@ export const allVacancies = [
 
   {
     rewievs: {
-      name: "Катерина",
+      name: "Лілія",
       images: [],
-      date: "14.04.2022",
-      vacancy: "Valeo",
-      review: "Робота не тяжка, все як і сказав мені менеджер, житло гарне",
+      date: "03.05.2025",
+      vacancy: "Склад DIY Logistic",
+      review:
+        "Все супер! Умови роботи точно такі, як мені описали на початку. Проживання хороше, без проблем. Менеджери допомогли із квитками, на всі питання відповідають. Дуже вдячна!",
     },
-    aboutCompany: "🔧 Запрошуємо на роботу: Оператор машин у автомобільному виробництві! 🚗💡",
-    title: "Пакування автомобільних фар",
-    pageTitle: "Пакувальник автомобільних фар для таких автомобілей як : 'Mersedes' 'Audi' 'BMW'",
+    title: "Пакування товарів на складі",
+    pageTitle: " Запрошуємо на роботу: Комплектування різних товарів на складі",
     img: {
       hostelFoto: [],
-      vacancyFoto: valeoMain,
+      vacancyFoto: [],
     },
-    name: "Valeo",
-    city: "Chrzanów (30 км від Краків)",
-    contract: "Umowa o pracę",
+    name: "DIY Logistic Services Polska",
+    city: "Świebodzin (110 км від Познань)",
+    contract: "Umowa zlecenia",
     salary: {
-      salaryPerHour: salaryZlecenia,
-      studentsSalary: studentsSalary,
-      salaryPerMonth: salaryUmowaOPrace,
+      salaryPerHour: null,
+      studentsSalary: null,
+      salaryPerMonth: null,
       night: "+20% до ставки 🌙",
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
-      firstProcess: " Сортування, маркування, упаковка одягу 📦",
-      secondProcess: " Збір та комплектація замовлень 🧺",
-      thirdProcess: " Розпаковка/перепаковка товару 📥",
-      fourthProcess: " Розміщення товарів на полицях, вішалках 🗂️",
-      fifthProcess: "",
+      firstProcess: " Приймання, транспортування та розміщення вантажів 📦",
+      secondProcess: " Комплектація та пакування замовлень. Робота зі сканерами 📲",
+      thirdProcess: " Використання ручних візків та допоміжного обладнання 🛒",
+      fourthProcess: " Використання інструментів (ножі, ваги, етикетувальні машини тощо) ⚙️",
+      fifthProcess: "Робота з триступеневою драбиною (до 1 м) ",
     },
     hostel: "Безкоштовно. 2-4 людини в кімнаті",
     requirements: {

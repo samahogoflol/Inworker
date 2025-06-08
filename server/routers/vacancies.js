@@ -13,12 +13,10 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const vacancyData = req.body;
+    const newVacancy = new Vacancy(req.body);
+    const savedVacancy = await newVacancy.save();
 
-    const newVacancy = new Vacancy(vacancyData);
-
-    await newVacancy.save();
-    res.status(201).json(newVacancy);
+    res.status(201).json(savedVacancy);
   } catch (error) {
     console.error("❌ Error adding vacancy:", error.message);
     res.status(500).json({ message: "Server error", error: error.message });
