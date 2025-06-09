@@ -5,18 +5,10 @@ import ReviewCard from "../ReviewCard/ReviewCard";
 
 import "./templateReview.css";
 
-import philipsBathRoom from "../../images/hostelsFoto/philips/philipsBathRoom.jpg";
-import philipsKitchen from "../../images/hostelsFoto/philips/philipsKitchen.jpg";
-import philipsMainRoom from "../../images/hostelsFoto/philips/philipsMainRoom.jpg";
-
-import zaraBathRoom from "../../images/hostelsFoto/zara/zaraBathRoom.jpg";
-import zaraKitchen from "../../images/hostelsFoto/zara/zaraKitchen.jpg";
-import zaraMainRoom from "../../images/hostelsFoto/zara/zaraMainRoom.jpg";
-
 const templateReview = [
   {
     id: 1,
-    images: [philipsMainRoom, philipsBathRoom, philipsKitchen],
+    images: [],
     name: "Світлана",
     date: "06.04.2024",
     vacancy: "Philps",
@@ -25,7 +17,7 @@ const templateReview = [
   },
   {
     id: 2,
-    images: [zaraMainRoom, zaraKitchen, zaraBathRoom],
+    images: [],
     name: "Ірина",
     date: "06.04.2024",
     vacancy: "Zara",

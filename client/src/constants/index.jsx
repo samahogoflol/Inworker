@@ -29,7 +29,7 @@ export const allVacancies = [
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
       firstProcess:
@@ -75,7 +75,7 @@ export const allVacancies = [
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5-6 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
       firstProcess: " Пакування свічок по картонним коробкам ✨",
@@ -119,7 +119,7 @@ export const allVacancies = [
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-12 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
       firstProcess: " Сортування, маркування, упаковка одягу 📦",
@@ -163,7 +163,7 @@ export const allVacancies = [
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-10 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
       firstProcess: "Робота на виробничій лінії з різними видами продукції 🍫",
@@ -207,7 +207,7 @@ export const allVacancies = [
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-12 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
       firstProcess: " Сортування, пакування кави, чаю 📦",
@@ -251,7 +251,7 @@ export const allVacancies = [
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "10-12 годин в день (5-6 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "700 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
       firstProcess: " Пакування свіжої та копченої продукції 🐟",
@@ -340,7 +340,7 @@ export const allVacancies = [
       overtime: "+50% до ставки ⏱️",
       weekendWork: "+100% до ставки 🎉",
     },
-    workingHours: "8-12 годин в день (5 днів на тиждень)",
+    workingHours: "8-12 годин в день (5-6 днів на тиждень)",
     premiums: "500 зл брутто за продуктивність та відсутність прогулів 💸",
     responsibilities: {
       firstProcess: " Відділ нарізки сировини: сортування нарізаного сировини та відправка на сушку ✅ ",

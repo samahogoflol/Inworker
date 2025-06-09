@@ -1,6 +1,8 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { VacancyContext } from "../VacancyContext";
+
+import TestApi from "../testAPI";
 
 import "./vacanciesCards.css";
 
@@ -18,6 +20,7 @@ const VacanciesCards = ({ enablePagination }) => {
 
   return (
     <>
+      <TestApi></TestApi>
       <div className="vacancy_grid">
         {vacanciesToRender()
           .slice(0, visibleVacancies)
