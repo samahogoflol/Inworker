@@ -2,34 +2,33 @@ import React, { useState, useContext, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { VacancyContext } from "../VacancyContext";
 
-import TestApi from "../testAPI";
+import { zleceniaContract, oPraciContract } from "../../salaryConstants/index";
+
+import getAllVacancies from "../../services/vacancyFromDB";
 
 import "./vacanciesCards.css";
 
 const VacanciesCards = ({ enablePagination }) => {
-  const [visibleVacancies, setVisibleVacancies] = useState(6);
-  const { vacancies, filteredVacancies } = useContext(VacancyContext);
+  const [allVacancies, setAllVacancies] = useState([]);
 
-  const vacanciesToRender = () => {
-    return filteredVacancies.length > 0 ? filteredVacancies : vacancies;
-  };
+  // function downloadMoreVacancies() {
+  //   setVisibleVacancies((prev) => prev + 6);
+  // }
 
-  function downloadMoreVacancies() {
-    setVisibleVacancies((prev) => prev + 6);
-  }
+  useEffect(() => {
+    getAllVacancies().then((res) => {
+      setAllVacancies(res);
+    });
+  }, []);
 
   return (
     <>
-      <TestApi></TestApi>
       <div className="vacancy_grid">
-        {vacanciesToRender()
-          .slice(0, visibleVacancies)
-          .map((vacancy) => (
-            <div key={vacancy.id} className="vacancy">
-              <div className="card">
-                <div className="img">
-                  <img src={vacancy.img.vacancyFoto} alt={vacancy.title} className="vacancy-image" />
-                </div>
+        {allVacancies.map((vacancy) => (
+          <div key={vacancy._id} className="vacancy">
+            <div className="card">
+              <div className="img">
+                <img src={`http://localhost:5000/uploads/1749458432489-577475245.jpg`} alt={vacancy.title} className="vacancy-image" />
                 <div className="title">
                   <h3>{vacancy.title}</h3>
                 </div>
@@ -37,7 +36,7 @@ const VacanciesCards = ({ enablePagination }) => {
                   <ul className="discription_list">
                     <li>
                       <span className="span_discroption">Заробітна плата : </span>
-                      {vacancy.contract === "Umowa o pracę" ? vacancy.salary.salaryPerMonth : vacancy.salary.salaryPerHour}
+                      {vacancy.contract === "Umowa o pracę" ? oPraciContract.salaryPerMonth : zleceniaContract.salaryPerHour}
                     </li>
                     <li>
                       <span className="span_discroption">Графік :</span> {vacancy.workingHours}
@@ -58,9 +57,11 @@ const VacanciesCards = ({ enablePagination }) => {
                 </Link>
               </div>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
-      {enablePagination ? (
+
+      {/* {enablePagination ? (
         <button onClick={downloadMoreVacancies} className="see_more_vacancies">
           Загрузити ще вакансії
         </button>
@@ -68,7 +69,7 @@ const VacanciesCards = ({ enablePagination }) => {
         <NavLink end to="/vacancies">
           <button className="btn_look_all_vacancion">Переглянути всі вакансії</button>
         </NavLink>
-      )}
+      )} */}
     </>
   );
 };
