@@ -11,10 +11,6 @@ import "./vacanciesCards.css";
 const VacanciesCards = ({ enablePagination }) => {
   const [allVacancies, setAllVacancies] = useState([]);
 
-  // function downloadMoreVacancies() {
-  //   setVisibleVacancies((prev) => prev + 6);
-  // }
-
   useEffect(() => {
     getAllVacancies().then((res) => {
       setAllVacancies(res);
