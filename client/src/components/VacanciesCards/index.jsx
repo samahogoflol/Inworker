@@ -10,6 +10,7 @@ import "./vacanciesCards.css";
 
 const VacanciesCards = ({ enablePagination }) => {
   const [allVacancies, setAllVacancies] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(6);
 
   useEffect(() => {
     getAllVacancies().then((res) => {
@@ -20,11 +21,11 @@ const VacanciesCards = ({ enablePagination }) => {
   return (
     <>
       <div className="vacancy_grid">
-        {allVacancies.map((vacancy) => (
+        {allVacancies.slice(0, visibleCount).map((vacancy) => (
           <div key={vacancy._id} className="vacancy">
             <div className="card">
               <div className="img">
-                <img src={`http://localhost:5000/uploads/1749458432489-577475245.jpg`} alt={vacancy.title} className="vacancy-image" />
+                <img src={`http://localhost:5000${vacancy.img.vacancyFoto}`} alt={vacancy.title} className="vacancy-image" />
                 <div className="title">
                   <h3>{vacancy.title}</h3>
                 </div>
@@ -32,7 +33,11 @@ const VacanciesCards = ({ enablePagination }) => {
                   <ul className="discription_list">
                     <li>
                       <span className="span_discroption">Заробітна плата : </span>
-                      {vacancy.contract === "Umowa o pracę" ? oPraciContract.salaryPerMonth : zleceniaContract.salaryPerHour}
+                      {vacancy.salary.salaryPerHour
+                        ? vacancy.salary.salaryPerHour
+                        : vacancy.contract === "Umowa o pracę"
+                        ? oPraciContract.salaryPerMonth
+                        : zleceniaContract.salaryPerHour}
                     </li>
                     <li>
                       <span className="span_discroption">Графік :</span> {vacancy.workingHours}
@@ -57,15 +62,15 @@ const VacanciesCards = ({ enablePagination }) => {
         ))}
       </div>
 
-      {/* {enablePagination ? (
-        <button onClick={downloadMoreVacancies} className="see_more_vacancies">
+      {enablePagination ? (
+        <button onClick={() => setVisibleCount(visibleCount + 6)} className="see_more_vacancies">
           Загрузити ще вакансії
         </button>
       ) : (
         <NavLink end to="/vacancies">
           <button className="btn_look_all_vacancion">Переглянути всі вакансії</button>
         </NavLink>
-      )} */}
+      )}
     </>
   );
 };

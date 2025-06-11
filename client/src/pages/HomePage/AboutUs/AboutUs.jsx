@@ -33,7 +33,7 @@ const AboutUs = () => {
           <div className="feature-item">
             <img src={wallet} alt="У нас справді висока зарплатня" />
             <article className="feature">
-              <h3>ЗП від 60.000грн/міс</h3>
+              <h3>ЗП від 50.000грн/міс</h3>
               <p>Наші клієнти отримують ЗП на карту, без затримок</p>
             </article>
           </div>
