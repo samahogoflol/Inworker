@@ -9,7 +9,7 @@ import ImageCarousel from "../../components/ImageCarousel";
 import MarqueeText from "../../components/MarqueeText";
 import TemplateReview from "../../components/TemplateReview";
 import VacanciesCards from "../../components/VacanciesCards";
-import { VacancyProvider } from "../../components/VacancyContext";
+import { VacancyProvider } from "../../context/VacancyContext";
 // import FormAppear from "../../components/FormAppear";
 
 const HomePage = () => {
@@ -19,9 +19,9 @@ const HomePage = () => {
       <MainFon />
       <AboutUs />
       <MarqueeText />
-      <VacancyProvider>
-        <VacanciesCards enablePagination={false} />
-      </VacancyProvider>
+      {/* <VacancyProvider> */}
+      <VacanciesCards enablePagination={false} />
+      {/* </VacancyProvider> */}
       <MarqueeText />
       <TemplateReview />
       <MarqueeText />

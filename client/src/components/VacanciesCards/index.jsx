@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { VacancyContext } from "../VacancyContext";
+import { VacancyContext } from "../../context/VacancyContext/index.jsx";
 
-import { zleceniaContract, oPraciContract } from "../../salaryConstants/index";
+import { zleceniaContract, oPraciContract } from "../../utils/salaryConstants/index.js";
 
-import getAllVacancies from "../../services/vacancyFromDB";
+import getAllVacancies from "../../api/vacancyFromDB/index.js";
 
 import "./vacanciesCards.css";
 
@@ -62,15 +62,17 @@ const VacanciesCards = ({ enablePagination }) => {
         ))}
       </div>
 
-      {enablePagination ? (
-        <button onClick={() => setVisibleCount(visibleCount + 6)} className="see_more_vacancies">
-          Загрузити ще вакансії
-        </button>
-      ) : (
+      {!enablePagination ? (
         <NavLink end to="/vacancies">
           <button className="btn_look_all_vacancion">Переглянути всі вакансії</button>
         </NavLink>
-      )}
+      ) : null}
+
+      {enablePagination && visibleCount < allVacancies.length ? (
+        <button onClick={() => setVisibleCount(visibleCount + 6)} className="see_more_vacancies">
+          Загрузити ще вакансії
+        </button>
+      ) : null}
     </>
   );
 };

@@ -8,7 +8,6 @@ const getAllVacancies = async () => {
     }
     const json = await response.json();
     return json;
-    
   } catch (err) {
     console.error(err.message);
   }
