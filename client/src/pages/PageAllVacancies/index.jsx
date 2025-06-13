@@ -2,7 +2,7 @@ import React from "react";
 
 import VacanciesCards from "../../components/VacanciesCards";
 import Header from "../../components/Header";
-
+import Footer from "../../components/Footer";
 
 const PageAllVacancies = () => {
   return (
@@ -12,6 +12,7 @@ const PageAllVacancies = () => {
       {/* <VacancyFilter /> */}
       <VacanciesCards enablePagination={true} />
       {/* </VacancyProvider> */}
+      <Footer />
     </>
   );
 };

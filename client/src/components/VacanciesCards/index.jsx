@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { VacancyContext } from "../../context/VacancyContext/index.jsx";
 
-import { zleceniaContract, oPraciContract } from "../../utils/salaryConstants/index.js";
+import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
 
 import getAllVacancies from "../../api/vacancyFromDB/index.js";
 
