@@ -19,9 +19,9 @@ const HomePage = () => {
       <MainFon />
       <AboutUs />
       <MarqueeText />
-      {/* <VacancyProvider> */}
-      <VacanciesCards enablePagination={false} />
-      {/* </VacancyProvider> */}
+      <VacancyProvider>
+        <VacanciesCards enablePagination={false} />
+      </VacancyProvider>
       <MarqueeText />
       <TemplateReview />
       <MarqueeText />

@@ -9,19 +9,14 @@ import getAllVacancies from "../../api/vacancyFromDB/index.js";
 import "./vacanciesCards.css";
 
 const VacanciesCards = ({ enablePagination }) => {
+  const { filteredVacancies } = useContext(VacancyContext);
   const [allVacancies, setAllVacancies] = useState([]);
   const [visibleCount, setVisibleCount] = useState(6);
-
-  useEffect(() => {
-    getAllVacancies().then((res) => {
-      setAllVacancies(res);
-    });
-  }, []);
 
   return (
     <>
       <div className="vacancy_grid">
-        {allVacancies.slice(0, visibleCount).map((vacancy) => (
+        {filteredVacancies.slice(0, visibleCount).map((vacancy) => (
           <div key={vacancy._id} className="vacancy">
             <div className="card">
               <div className="img">
@@ -68,7 +63,7 @@ const VacanciesCards = ({ enablePagination }) => {
         </NavLink>
       ) : null}
 
-      {enablePagination && visibleCount < allVacancies.length ? (
+      {enablePagination && visibleCount < filteredVacancies.length ? (
         <button onClick={() => setVisibleCount(visibleCount + 6)} className="see_more_vacancies">
           Загрузити ще вакансії
         </button>
