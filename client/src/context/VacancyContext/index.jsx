@@ -9,6 +9,7 @@ export const VacancyContext = createContext();
 export const VacancyProvider = ({ children }) => {
   const [vacancies, setVacancies] = useState([]);
   const [filteredVacancies, setFilteredVacancies] = useState([]);
+  const [uniqueCities, setUniqueCities] = useState([]);
 
   const [selectedCity, setSelectedCity] = useState("");
   const [searchVacancyName, setSearchVacancyName] = useState("");
@@ -25,17 +26,12 @@ export const VacancyProvider = ({ children }) => {
     setFilteredVacancies(currentFilteredVacancies);
   }, [vacancies, selectedCity]);
 
-  const uniqueCities = [];
-
-  const colectUniqueCities = () => {
-    vacancies.forEach((item) => {
-      if (!uniqueCities.includes(item.city)) {
-        uniqueCities.push(item.city);
-      }
-    });
-  };
-
-  colectUniqueCities();
+  useEffect(() => {
+    if (vacancies.length > 0) {
+      const cities = new Set(vacancies.map((vacancy) => vacancy.city));
+      setUniqueCities(Array.from(cities));
+    }
+  }, [vacancies]);
 
   return (
     <VacancyContext.Provider

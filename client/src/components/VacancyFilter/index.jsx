@@ -18,9 +18,11 @@ const VacancyFilter = () => {
   return (
     <>
       <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
-        <option value="">Оберіть місто</option>
+        <option value="">Оберіть місто / Всі міста</option>
         {uniqueCities.map((item) => (
-          <option key={item}>{item}</option>
+          <option key={item} value={item}>
+            {item}
+          </option>
         ))}
       </select>
     </>

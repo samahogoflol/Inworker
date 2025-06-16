@@ -4,13 +4,11 @@ import { VacancyContext } from "../../context/VacancyContext/index.jsx";
 
 import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
 
-import getAllVacancies from "../../api/vacancyFromDB/index.js";
 
 import "./vacanciesCards.css";
 
 const VacanciesCards = ({ enablePagination }) => {
   const { filteredVacancies } = useContext(VacancyContext);
-  const [allVacancies, setAllVacancies] = useState([]);
   const [visibleCount, setVisibleCount] = useState(6);
 
   return (
