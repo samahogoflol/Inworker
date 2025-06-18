@@ -6,46 +6,51 @@ import "./style.css";
 
 const VacancyFilter = () => {
   const {
-    vacancies,
-    filteredVacancies,
     selectedCity,
     setSelectedCity,
-    searchText,
-    setSearchText,
-    selectedContractType,
-    setSelectedContractType,
     uniqueCities,
+    uniqueContractType,
+    selectedContract,
+    setSelectedContract,
+    searchVacancyName,
+    setSearchVacancyName,
   } = useContext(VacancyContext);
+
+  const btnClearFilters = () => {
+    setSelectedCity("");
+    setSelectedContract("");
+    setSearchVacancyName("");
+  };
 
   return (
     <>
       <div className="filter_field">
-        <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
-          <option value="">Оберіть місто / Всі міста</option>
-          {uniqueCities.map((item) => (
-            <option key={item} value={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-        <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
-          <option value="">Оберіть місто / Всі міста</option>
-          {uniqueCities.map((item) => (
-            <option key={item} value={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-        <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
-          <option value="">Оберіть місто / Всі міста</option>
-          {uniqueCities.map((item) => (
-            <option key={item} value={item}>
-              {item}
-            </option>
-          ))}
-        </select>
+        <input
+          type="text"
+          value={searchVacancyName}
+          placeholder="Введіть назву вакансії"
+          onChange={(e) => setSearchVacancyName(e.target.value)}
+        ></input>
 
-        <button className="clear_filter">Очистити фільтри</button>
+        <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
+          <option value="">Оберіть місто / Всі міста</option>
+          {uniqueCities.map((item) => (
+            <option key={item} value={item}>
+              {item}
+            </option>
+          ))}
+        </select>
+        <select value={selectedContract} onChange={(e) => setSelectedContract(e.target.value)}>
+          <option value="">Трудовий договір</option>
+          {uniqueContractType.map((item) => (
+            <option key={item} value={item}>
+              {item}
+            </option>
+          ))}
+        </select>
+        <button className="btn_clear_filter" onClick={() => btnClearFilters()}>
+          Очистити фільтри
+        </button>
       </div>
     </>
   );
