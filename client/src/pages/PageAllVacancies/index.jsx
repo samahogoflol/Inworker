@@ -1,11 +1,12 @@
 import React from "react";
-import { VacancyProvider } from "../../context/VacancyContext"; 
+import { VacancyProvider } from "../../context/VacancyContext";
 
-import VacanciesCards from "../../components/VacanciesCards"; 
+import VacanciesCards from "../../components/VacanciesCards";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import SinglePage from "../../components/SimplePage";
 
-import VacancyFilter from "../../components/VacancyFilter"; 
+import VacancyFilter from "../../components/VacancyFilter";
 
 const PageAllVacancies = () => {
   return (
@@ -14,6 +15,7 @@ const PageAllVacancies = () => {
       <VacancyProvider>
         <VacancyFilter />
         <VacanciesCards enablePagination={true} />
+        <SinglePage />
       </VacancyProvider>
       <Footer />
     </>

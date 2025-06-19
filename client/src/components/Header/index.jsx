@@ -34,11 +34,6 @@ const Header = () => {
             </li>
             {/* <li>
               <NavLink end style={({ isActive }) => ({ color: isActive ? "#9f0013" : "black" })} to="#">
-                Відгуки
-              </NavLink>
-            </li>
-            <li>
-              <NavLink end style={({ isActive }) => ({ color: isActive ? "#9f0013" : "black" })} to="#">
                 Спіпраця з нами
               </NavLink>
             </li>

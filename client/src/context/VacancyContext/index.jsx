@@ -42,7 +42,6 @@ export const VacancyProvider = ({ children }) => {
     if (vacancies.length > 0) {
       const contracts = new Set(vacancies.map((vacancy) => vacancy.contract));
       setUniqueContractType(Array.from(contracts));
-      console.log(contracts);
     }
   }, [vacancies]);
 
