@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageAboutUs from "./pages/PageAboutUs";
 import PageAllVacancies from "./pages/PageAllVacancies";
 
-
 const App = () => {
   return (
     <Router>
