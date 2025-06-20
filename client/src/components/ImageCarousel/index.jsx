@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./imageCarousel.css";
 
-const ImageCarousel = ({ images,customClass }) => {
+const ImageCarousel = ({ images, customClass }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!images || images.length === 0) {
@@ -16,8 +16,6 @@ const ImageCarousel = ({ images,customClass }) => {
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
-
-  console.log(customClass)
 
   return (
     <>

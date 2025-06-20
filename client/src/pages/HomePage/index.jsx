@@ -25,7 +25,6 @@ const HomePage = () => {
       <MarqueeText />
       <TemplateReview />
       <MarqueeText />
-      <ImageCarousel />
       <Form />
       <Footer />
       {/* <FormAppear /> */}

@@ -2,35 +2,14 @@
   display: grid;
   grid-template-columns: repeat(2, 600px);
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .single_page_header {
-  display: flex;
-  justify-content: center;
-  max-width: 1200px;
-  margin-left: 380px;
-  margin-top: 50px;
-}
-
-.single_page_header h3 {
   text-align: center;
-  align-items: center;
-  margin-top: 10px;
-  font-size: 41px;
-}
-
-.vacancy_image {
-  width: 150px;
-  height: 130px;
-  border-radius: 10px;
-  margin-right: 30px;
-}
-
-.single_page_left_side {
-  background-color: rgb(143, 147, 148);
-  height: 800px;
-  width: 500px;
-  border-radius: 30px;
+  max-width: 1000px;
+  margin-left: 380px;
   margin-top: 30px;
 }
 

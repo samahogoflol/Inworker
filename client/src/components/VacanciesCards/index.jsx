@@ -1,9 +1,8 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { VacancyContext } from "../../context/VacancyContext/index.jsx";
 
 import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
-
 
 import "./vacanciesCards.css";
 
@@ -46,7 +45,7 @@ const VacanciesCards = ({ enablePagination }) => {
                     </li>
                   </ul>
                 </div>
-                <Link to={`/vacancies/${vacancy.id}`}>
+                <Link to={`/vacancies/${vacancy._id}`}>
                   <button className="btn">Переглянути вакансію</button>
                 </Link>
               </div>
