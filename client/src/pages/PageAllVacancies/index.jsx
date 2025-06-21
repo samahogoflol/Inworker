@@ -4,7 +4,6 @@ import { VacancyProvider } from "../../context/VacancyContext";
 import VacanciesCards from "../../components/VacanciesCards";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import SinglePage from "../../components/SinglePage";
 
 import VacancyFilter from "../../components/VacancyFilter";
 

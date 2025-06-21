@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 import Header from "../Header";
 import Footer from "../Footer";
-import TemplateReview from "../TemplateReview";
+import ImageSpinner from "../ImageSpinner";
 import MarqueeText from "../MarqueeText";
 
 import { getAllVacancies, getVacancyById } from "../../api/vacancyFromDB";
@@ -29,6 +29,8 @@ const SinglePage = () => {
       setSinglePage(res);
     });
   }, []);
+
+  console.log(<ImageSpinner />);
 
   return (
     <>
@@ -87,8 +89,9 @@ const SinglePage = () => {
             </div>
 
             <div className="single_page_right_side">
-              <h2>Відгуки</h2>
-              
+              <h3>Фото житла</h3>
+              <p>Варіанти житла з минулих заїздів наших клієнтів</p>
+              <ImageSpinner />
             </div>
           </div>
         </>
