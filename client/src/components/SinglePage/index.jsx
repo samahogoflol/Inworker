@@ -3,10 +3,10 @@ import { Link, useParams } from "react-router-dom";
 
 import Header from "../Header";
 import Footer from "../Footer";
-import ImageSpinner from "../ImageSpinner";
 import MarqueeText from "../MarqueeText";
+import ImageCarousel from "../ImageCarousel";
 
-import { getAllVacancies, getVacancyById } from "../../api/vacancyFromDB";
+import { getVacancyById } from "../../api/vacancyFromDB";
 import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
 
 import "./style.css";
@@ -28,9 +28,7 @@ const SinglePage = () => {
     getVacancyById(vacancyId).then((res) => {
       setSinglePage(res);
     });
-  }, []);
-
-  console.log(<ImageSpinner />);
+  }, [vacancyId]);
 
   return (
     <>
@@ -73,25 +71,31 @@ const SinglePage = () => {
 
               <h3>Обов'язки : </h3>
               <ul>
-                <li>{singlePage.responsibilities.firstProcess}</li>
-                <li>{singlePage.responsibilities.secondProcess}</li>
-                {singlePage.responsibilities.thirdProcess ? <li>{singlePage.responsibilities.thirdProcess}</li> : null}
-                {singlePage.responsibilities.fourthProcess ? <li>{singlePage.responsibilities.fourthProcess}</li> : null}
-                {singlePage.responsibilities.fifthProcess ? <li>{singlePage.responsibilities.fifthProcess}</li> : null}
+                <li>{singlePage.responsibilities?.firstProcess}</li>
+                <li>{singlePage.responsibilities?.secondProcess}</li>
+                {singlePage.responsibilities.thirdProcess ? <li>{singlePage.responsibilities?.thirdProcess}</li> : null}
+                {singlePage.responsibilities.fourthProcess ? <li>{singlePage.responsibilities?.fourthProcess}</li> : null}
+                {singlePage.responsibilities.fifthProcess ? <li>{singlePage.responsibilities?.fifthProcess}</li> : null}
               </ul>
 
               <h3>Вимоги : </h3>
               <ul>
-                <li>Для кого робота : {singlePage.requirements.gender} </li>
-                <li>Досвід роботи : {singlePage.requirements.experience} </li>
-                <li>Знання польської мови : {singlePage.requirements.proficiency} </li>
+                <li>Для кого робота : {singlePage.requirements?.gender} </li>
+                <li>Досвід роботи : {singlePage.requirements?.experience} </li>
+                <li>Знання польської мови : {singlePage.requirements?.proficiency} </li>
               </ul>
             </div>
 
             <div className="single_page_right_side">
               <h3>Фото житла</h3>
               <p>Варіанти житла з минулих заїздів наших клієнтів</p>
-              <ImageSpinner />
+              <ImageCarousel
+                images={singlePage.img.hostelFoto.map((item) => {
+                  <div>
+                    <img src={item} alt="" />
+                  </div>;
+                })}
+              />
             </div>
           </div>
         </>
