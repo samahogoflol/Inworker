@@ -46,7 +46,7 @@ const VacanciesCards = ({ enablePagination }) => {
                   </ul>
                 </div>
                 <Link to={`/vacancies/${vacancy._id}`}>
-                  <button className="btn">Переглянути вакансію</button>
+                  <button className="btn"> Переглянути вакансію </button>
                 </Link>
               </div>
             </div>
