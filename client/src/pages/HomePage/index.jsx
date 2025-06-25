@@ -22,7 +22,7 @@ const HomePage = () => {
         <VacanciesCards enablePagination={false} />
       </VacancyProvider>
       <MarqueeText />
-      <TemplateReview />
+      {/* <TemplateReview /> */}
       <MarqueeText />
       <Form />
       <Footer />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./imageCarousel.css";
 
-const ImageCarousel = ({ images, customClass }) => {
+const ImageCarousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!images || images.length === 0) {
@@ -19,8 +19,18 @@ const ImageCarousel = ({ images, customClass }) => {
 
   return (
     <>
-      <img className="carousel_img" src={images[currentIndex]} alt={"Це блок з відгуками"} />
-      <div className={`carousel ${customClass || ""}`}>
+      <div className="carousel">
+        <img
+          className="carousel_img_left"
+          src={images[(currentIndex - 1 + images.length) % images.length]}
+          alt={"Це блок з відгуками"}
+        />
+        <img className="carousel_img_center" src={images[currentIndex]} alt={"Це блок з відгуками"} />
+
+        <img className="carousel_img_right" src={images[(currentIndex + 1) % images.length]} alt={"Це блок з відгуками"} />
+      </div>
+
+      <div className="buttons">
         <div onClick={handlePrev} className="left_btn"></div>
         <div onClick={handleNext} className="right_btn"></div>
       </div>

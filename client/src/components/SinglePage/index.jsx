@@ -37,6 +37,7 @@ const SinglePage = () => {
         <>{console.log("loading...")}</>
       ) : (
         <>
+          {console.log("done")}
           <h1 className="single_page_header">{singlePage.pageTitle}</h1>
           <div className="single_page">
             <div className="single_page_left_side">
@@ -89,13 +90,7 @@ const SinglePage = () => {
             <div className="single_page_right_side">
               <h3>Фото житла</h3>
               <p>Варіанти житла з минулих заїздів наших клієнтів</p>
-              <ImageCarousel
-                images={singlePage.img.hostelFoto.map((item) => {
-                  <div>
-                    <img src={item} alt="" />
-                  </div>;
-                })}
-              />
+              <ImageCarousel images={singlePage.img.hostelFoto} />
             </div>
           </div>
         </>
