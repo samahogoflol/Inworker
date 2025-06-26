@@ -4,21 +4,24 @@
 }
 
 .carousel_img_left {
-  height: 225px;
-  width: 130px;
-  margin-top: 112.5px;
+  height: 300px;
+  width: 180px;
+  margin-top: 125px;
   margin-right: 10px;
+  border-radius: 5%;
 }
 .carousel_img_right {
-  height: 225px;
-  width: 130px;
-  margin-top: 112.5px;
+  height: 300px;
+  width: 180px;
+  margin-top: 125px;
   margin-left: 10px;
+  border-radius: 5%;
 }
 
 .carousel_img_center {
-  height: 450px;
-  width: 250px;
+  height: 550px;
+  width: 300px;
+  border-radius: 5%;
 }
 
 .buttons {
@@ -28,7 +31,6 @@
 }
 
 .carousel_img {
-  border-radius: 5%;
   margin-top: 20px;
 }
 
@@ -44,7 +46,7 @@
 .left_btn {
   position: absolute;
   left: 25px;
-  top: -220px;
+  top: -300px;
   height: 45px;
   width: 45px;
   border-radius: 50%;
@@ -57,7 +59,7 @@
 .right_btn {
   position: absolute;
   right: 25px;
-  top: -220px;
+  top: -300px;
   height: 45px;
   width: 45px;
   border-radius: 50%;

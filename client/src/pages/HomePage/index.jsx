@@ -6,7 +6,6 @@ import Form from "../../components/Form";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import MarqueeText from "../../components/MarqueeText";
-import TemplateReview from "../../components/TemplateReview";
 import VacanciesCards from "../../components/VacanciesCards";
 import { VacancyProvider } from "../../context/VacancyContext";
 // import FormAppear from "../../components/FormAppear";

@@ -11,10 +11,10 @@ const VacancySchema = new mongoose.Schema({
   hostel: { type: String, required: true },
   reviews: [
     {
-      name: { type: String, required: true },
-      images: { type: [String] },
+      customerName: { type: String, required: true },
+      img: { type: [String] },
       date: { type: String, required: true },
-      vacancy: { type: String, required: true },
+      vacancyName: { type: String, required: true },
       review: { type: String, required: true },
     },
   ],

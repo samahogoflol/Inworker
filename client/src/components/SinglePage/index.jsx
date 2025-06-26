@@ -9,8 +9,9 @@ import ImageCarousel from "../ImageCarousel";
 import { getVacancyById } from "../../api/vacancyFromDB";
 import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
 
+import test1 from "../../images/test/clipboard_image_96d355860433ea6225e070f50f7b646b.jpg";
+
 import "./style.css";
-import ReviewCard from "../ReviewCard/ReviewCard";
 
 const SinglePage = () => {
   const star = <div className="star"></div>;
@@ -41,8 +42,6 @@ const SinglePage = () => {
           <h1 className="single_page_header">{singlePage.pageTitle}</h1>
           <div className="single_page">
             <div className="single_page_left_side">
-              {/* <h2>{singlePage.pageTitle}</h2> */}
-
               <h3>Коротко про головне : </h3>
               <ul className="about_main">
                 <li>Місто : {singlePage.city}</li>
@@ -88,11 +87,13 @@ const SinglePage = () => {
             </div>
 
             <div className="single_page_right_side">
-              <h3>Фото житла</h3>
-              <p>Варіанти житла з минулих заїздів наших клієнтів</p>
+              <h3>Варіанти житла з минулих заїздів наших клієнтів : </h3>
               <ImageCarousel images={singlePage.img.hostelFoto} />
             </div>
           </div>
+          <MarqueeText />
+
+          <ImageCarousel images={singlePage.reviews[0]?.img} />
         </>
       )}
       <Footer />
