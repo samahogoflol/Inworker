@@ -8,6 +8,8 @@ import viber from "../../images/viber.png";
 import telefon from "../../images/telefon.png";
 
 const Footer = () => {
+  const telegramUrl = "https://t.me/robotavpolshi_inworker";
+
   return (
     <>
       <div className="footer">
@@ -18,14 +20,14 @@ const Footer = () => {
             </NavLink>
           </h2>
           <div className="footer_socials_block">
-            <a>
+            <a target="_blank" href={telegramUrl}>
               <img src={telegram} alt="Посилання на телеграм групу компанії" />
             </a>
-            <a>
-              <img src={viber} alt="Посилання на телеграм групу компанії" />
+            <a target="_blank" href="viber://chat?number=380664844563">
+              <img src={viber} alt="Контакт менеджера в вайбері" />
             </a>
-            <a>
-              <img src={telefon} alt="Посилання на телеграм групу компанії" />
+            <a href="tel:+380664844563">
+              <img src={telefon} alt="Контактний телефон менеджера" />
             </a>
           </div>
         </nav>
@@ -65,12 +67,12 @@ const Footer = () => {
           </ul>
         </nav>
         <nav className="nav_contact">
-          <ul>
-            <li style={{ marginBottom: "40px", color: "rgb(5, 235, 235)" }}>Контакти</li>
-            <li>+380664844563</li>
-            <li>+380935612197</li>
-            <li>inworker2022@gmail.com</li>
-          </ul>
+          <p style={{ marginBottom: "40px", color: "rgb(5, 235, 235)" }}>Контакти</p>
+          <section className="footer_contacts">
+            <a href="tel:+380664844563">+380664844563</a>
+            <a href="tel:+380935612197">+380935612197</a>
+            <a href="mailto:inworker2022@gmail.com">inworker2022@gmail.com</a>
+          </section>
         </nav>
       </div>
       <div className="privacy_policy">

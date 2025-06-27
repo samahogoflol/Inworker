@@ -7,6 +7,8 @@ import viber from "../../images/viber.png";
 import telefon from "../../images/telefon.png";
 
 const Header = () => {
+  const telegramUrl = "https://t.me/robotavpolshi_inworker";
+
   return (
     <div>
       <header className="app_header">
@@ -43,7 +45,7 @@ const Header = () => {
               </NavLink>
             </li> */}
           </ul>
-          <Link to="/">
+          <a target="_blank" href={telegramUrl}>
             <img
               src={telegram}
               alt="Посилання на телеграм канал компанії"
@@ -51,7 +53,7 @@ const Header = () => {
               height={"45px"}
               style={{ borderRadius: "50%" }}
             />
-          </Link>
+          </a>
           <Link to="/" target="_self">
             <img src={viber} alt="Посилання вайбер компанії" width={"45px"} height={"45px"} style={{ borderRadius: "50%" }} />
           </Link>

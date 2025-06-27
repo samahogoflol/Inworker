@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useFormik } from "formik";
+import { FastField, useFormik } from "formik";
 
 import "./formAppear.css";
 
@@ -31,11 +31,22 @@ const validate = (values) => {
   return errors;
 };
 
-const FormAppear = () => {
-  const [appearForm, setAppearForm] = useState(false);
+const FormAppear = ({ setVisibleForm }) => {
+  useEffect(() => {
+    setVisibleForm(true);
+  }, []);
 
   useEffect(() => {
-    setAppearForm(true);
+    const handleClickEscape = (e) => {
+      if (e.key === "Escape") {
+        setVisibleForm(false);
+      }
+    };
+    document.addEventListener("keydown", handleClickEscape);
+
+    return () => {
+      document.removeEventListener("keydown", handleClickEscape);
+    };
   }, []);
 
   const formik = useFormik({
@@ -49,10 +60,12 @@ const FormAppear = () => {
 
   return (
     <>
-      <div className={`_hideForm ${appearForm ? "popup-overlay" : ""}`} onClick={() => setAppearForm(false)}>
-        <button className={`_hideForm ${appearForm ? "close_btn" : ""}`} onClick={() => setAppearForm(false)}></button>
+      <div className={`_hideForm ${setVisibleForm ? "popup-overlay" : null}`} onClick={() => setVisibleForm(false)}>
+        {setVisibleForm ? (
+          <button className={`_hideForm ${setVisibleForm ? "close_btn" : null}`} onClick={() => setVisibleForm(false)}></button>
+        ) : null}
       </div>
-      {appearForm && (
+      {setVisibleForm && (
         <div className="formAppear">
           <img className="img_form_appear" src={imgTest} alt="Отримати безкоштовну консультацію" />
           <form className="form_appear" onSubmit={formik.handleSubmit} action="#">

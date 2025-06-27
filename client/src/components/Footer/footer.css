@@ -91,3 +91,9 @@ nav {
   font-size: larger;
   opacity: 0.8;
 }
+
+.footer_contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
