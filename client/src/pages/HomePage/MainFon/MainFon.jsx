@@ -4,9 +4,11 @@ import FormAppear from "../../../components/FormAppear";
 import "./mainFon.css";
 
 import headFon from "../../../images/headFon.png";
+import { use } from "react";
 
 const MainFon = () => {
   const [animation, setAnimation] = useState(false);
+  const [visibleForm, setVisibleForm] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,7 +18,6 @@ const MainFon = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -24,6 +25,7 @@ const MainFon = () => {
 
   return (
     <>
+      {!visibleForm ? null : <FormAppear   />}
       <div className="main_form">
         <div className="image_container">
           <img className="main_fon" src={headFon} alt="Замовити зворотній зв’зок" />
@@ -39,7 +41,11 @@ const MainFon = () => {
           Повний супровід від першого, <br />
           до останнього робочого дня
         </h2>
-        {<button className={`overlay_btn ${animation ? "_active" : ""}`}>Підібрати вакансію</button>}
+        {
+          <button onClick={() => setVisibleForm(true)} className={`overlay_btn ${animation ? "_active" : ""}`}>
+            Підібрати вакансію
+          </button>
+        }
       </div>
     </>
   );

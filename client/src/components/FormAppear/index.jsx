@@ -35,11 +35,7 @@ const FormAppear = () => {
   const [appearForm, setAppearForm] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setAppearForm(true);
-    }, 3000);
-
-    return () => clearTimeout(timer);
+    setAppearForm(true);
   }, []);
 
   const formik = useFormik({

@@ -8,7 +8,6 @@ import Footer from "../../components/Footer";
 import MarqueeText from "../../components/MarqueeText";
 import VacanciesCards from "../../components/VacanciesCards";
 import { VacancyProvider } from "../../context/VacancyContext";
-// import FormAppear from "../../components/FormAppear";
 
 const HomePage = () => {
   return (
@@ -20,8 +19,6 @@ const HomePage = () => {
       <VacancyProvider>
         <VacanciesCards enablePagination={false} />
       </VacancyProvider>
-      <MarqueeText />
-      {/* <TemplateReview /> */}
       <MarqueeText />
       <Form />
       <Footer />

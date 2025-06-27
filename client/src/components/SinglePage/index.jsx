@@ -5,11 +5,10 @@ import Header from "../Header";
 import Footer from "../Footer";
 import MarqueeText from "../MarqueeText";
 import ImageCarousel from "../ImageCarousel";
+import Form from "../Form";
 
 import { getVacancyById } from "../../api/vacancyFromDB";
 import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
-
-import test1 from "../../images/test/clipboard_image_96d355860433ea6225e070f50f7b646b.jpg";
 
 import "./style.css";
 
@@ -92,8 +91,7 @@ const SinglePage = () => {
             </div>
           </div>
           <MarqueeText />
-
-          <ImageCarousel images={singlePage.reviews[0]?.img} />
+          <Form />
         </>
       )}
       <Footer />
