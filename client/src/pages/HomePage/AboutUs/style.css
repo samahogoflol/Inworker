@@ -1,4 +1,4 @@
-.section_about_us {
+.about_us {
   margin-top: 60px;
   margin-bottom: 60px;
   display: grid;
@@ -7,11 +7,11 @@
   text-align: left;
 }
 
-#features-heading {
-  font-size: 2.5em;
+.about_us_header {
+  font-size: 35px;
 }
 
-.features-container {
+.about_us_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
@@ -19,23 +19,23 @@
   margin-left: 100px;
 }
 
-.feature-item {
+.about_us_item {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.feature img {
+.about_us_descrition img {
   width: 50px;
   height: auto;
 }
 
-.feature h3 {
+.about_us_descrition h3 {
   margin: 0;
   font-size: 1.2em;
 }
 
-.feature p {
+.about_us_descrition p {
   margin: 0;
   font-size: 1em;
 }

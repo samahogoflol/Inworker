@@ -1,38 +1,38 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "./footer.css";
+import "./style.css";
 
-import telegram from "../../images/telegram.png";
-import viber from "../../images/viber.png";
-import telefon from "../../images/telefon.png";
+import telegramIcon from "../../images/telegram.png";
+import viberIcon from "../../images/viber.png";
+import telefonIcon from "../../images/telefon.png";
+
+import { telegramUrl, viberUrl, gmailUrl, contactNumberMenedgerOne, contactNumberMenedgerTwo } from "../../utils/contacts";
 
 const Footer = () => {
-  const telegramUrl = "https://t.me/robotavpolshi_inworker";
-
   return (
     <>
       <div className="footer">
-        <nav className="nav_footer_socials">
+        <nav className="footer_nav_socials">
           <h2>
             <NavLink end to="/">
               <span style={{ color: "#9e3004e7" }}>IN</span>WORKER
             </NavLink>
           </h2>
-          <div className="footer_socials_block">
+          <section className="footer_socials_block">
             <a target="_blank" href={telegramUrl}>
-              <img src={telegram} alt="Посилання на телеграм групу компанії" />
+              <img src={telegramIcon} alt="Посилання на телеграм групу компанії" />
             </a>
-            <a target="_blank" href="viber://chat?number=380664844563">
-              <img src={viber} alt="Контакт менеджера в вайбері" />
+            <a target="_blank" href={viberUrl}>
+              <img src={viberIcon} alt="Контакт менеджера в вайбері" />
             </a>
-            <a href="tel:+380664844563">
-              <img src={telefon} alt="Контактний телефон менеджера" />
+            <a href={contactNumberMenedgerOne}>
+              <img src={telefonIcon} alt="Контактний телефон менеджера" />
             </a>
-          </div>
+          </section>
         </nav>
-        <nav className="nav_footer">
-          <ul className="nav_list_footer">
+        <nav>
+          <ul className="footer_nav_list">
             <li style={{ marginBottom: "40px", color: "rgb(5, 235, 235)" }}>Навігація </li>
             <li>
               <NavLink end style={({ isActive }) => ({ color: isActive ? "#9f0013" : "black" })} to="/">
@@ -66,18 +66,18 @@ const Footer = () => {
             </li> */}
           </ul>
         </nav>
-        <nav className="nav_contact">
-          <p style={{ marginBottom: "40px", color: "rgb(5, 235, 235)" }}>Контакти</p>
+        <nav className="footer_nav_contacts">
+          <h3 className="footer_nav_contacts_header">Контакти</h3>
           <section className="footer_contacts">
-            <a href="tel:+380664844563">+380664844563</a>
-            <a href="tel:+380935612197">+380935612197</a>
-            <a href="mailto:inworker2022@gmail.com">inworker2022@gmail.com</a>
+            <a href={contactNumberMenedgerOne}>+380664844563</a>
+            <a href={contactNumberMenedgerTwo}>+380935612197</a>
+            <a href={gmailUrl}>inworker2022@gmail.com</a>
           </section>
         </nav>
       </div>
-      <div className="privacy_policy">
-        <div className="avtor_policy"></div>
-        <div className="text_privacy_policy">2022 Всі права захищенно. InWorker</div>
+      <div className="footer_privacy_policy">
+        <div className="footer_avtor_policy"></div>
+        <div className="footer_text_privacy_policy">2022 Всі права захищенно. InWorker</div>
       </div>
     </>
   );

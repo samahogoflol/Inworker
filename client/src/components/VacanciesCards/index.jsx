@@ -2,9 +2,9 @@ import React, { useState, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { VacancyContext } from "../../context/VacancyContext/index.jsx";
 
-import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
+import { zleceniaContract, oPraciContract } from "../../utils/salary";
 
-import "./vacanciesCards.css";
+import "./style.css";
 
 const VacanciesCards = ({ enablePagination }) => {
   const { filteredVacancies } = useContext(VacancyContext);
@@ -12,19 +12,20 @@ const VacanciesCards = ({ enablePagination }) => {
 
   return (
     <>
-      <div className="vacancy_grid">
+      <h2 className="vacancy_cards_header">Актуальні вакансії</h2>
+      <div className="vacancy_cards_grid">
         {filteredVacancies.slice(0, visibleCount).map((vacancy) => (
-          <div key={vacancy._id} className="vacancy">
-            <div className="card">
-              <div className="img">
-                <img src={`http://localhost:5000${vacancy.img.vacancyFoto}`} alt={vacancy.title} className="vacancy-image" />
-                <div className="title">
+          <div key={vacancy._id} className="vacancy_cards_grid_card">
+            <div className="single_card">
+              <div>
+                <img src={`http://localhost:5000${vacancy.img.vacancyFoto}`} alt={vacancy.title} className="single_card_vacancy_img" />
+                <div className="single_card_title">
                   <h3>{vacancy.title}</h3>
                 </div>
-                <div className="card_discription">
-                  <ul className="discription_list">
+                <div className="single_card_description">
+                  <ul className="single_card_description_list">
                     <li>
-                      <span className="span_discroption">Заробітна плата : </span>
+                      <span className="single_card_span_description">Заробітна плата : </span>
                       {vacancy.salary.salaryPerHour
                         ? vacancy.salary.salaryPerHour
                         : vacancy.contract === "Umowa o pracę"
@@ -32,16 +33,16 @@ const VacanciesCards = ({ enablePagination }) => {
                         : zleceniaContract.salaryPerHour}
                     </li>
                     <li>
-                      <span className="span_discroption">Графік :</span> {vacancy.workingHours}
+                      <span className="single_card_span_description">Графік :</span> {vacancy.workingHours}
                     </li>
                     <li>
-                      <span className="span_discroption">Трудовий договір :</span> {vacancy.contract}
+                      <span className="single_card_span_description">Трудовий договір :</span> {vacancy.contract}
                     </li>
                     <li>
-                      <span className="span_discroption">Проживання :</span> {vacancy.hostel}
+                      <span className="single_card_span_description">Проживання :</span> {vacancy.hostel}
                     </li>
                     <li>
-                      <span className="span_discroption">Місто праці :</span> {vacancy.city}
+                      <span className="single_card_span_description">Місто праці :</span> {vacancy.city}
                     </li>
                   </ul>
                 </div>
@@ -56,12 +57,12 @@ const VacanciesCards = ({ enablePagination }) => {
 
       {!enablePagination ? (
         <NavLink end to="/vacancies">
-          <button className="btn_look_all_vacancion">Переглянути всі вакансії</button>
+          <button className="vacancies_card_page_btn_see_all_vacancies">Переглянути всі вакансії</button>
         </NavLink>
       ) : null}
 
       {enablePagination && visibleCount < filteredVacancies.length ? (
-        <button onClick={() => setVisibleCount(visibleCount + 6)} className="see_more_vacancies">
+        <button onClick={() => setVisibleCount(visibleCount + 6)} className="vacancies_card_page_btn_see_more_vacancies">
           Загрузити ще вакансії
         </button>
       ) : null}

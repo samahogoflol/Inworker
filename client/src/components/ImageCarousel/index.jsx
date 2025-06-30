@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./imageCarousel.css";
+import "./style.css";
 
 const ImageCarousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,20 +19,20 @@ const ImageCarousel = ({ images }) => {
 
   return (
     <>
-      <div className="carousel">
+      <div className="slider">
         <img
-          className="carousel_img_left"
+          className="slider_img_left"
           src={images[(currentIndex - 1 + images.length) % images.length]}
           alt={"Це блок з відгуками"}
         />
-        <img className="carousel_img_center" src={images[currentIndex]} alt={"Це блок з відгуками"} />
+        <img className="slider_img_center" src={images[currentIndex]} alt={"Це блок з відгуками"} />
 
-        <img className="carousel_img_right" src={images[(currentIndex + 1) % images.length]} alt={"Це блок з відгуками"} />
+        <img className="slider_img_right" src={images[(currentIndex + 1) % images.length]} alt={"Це блок з відгуками"} />
       </div>
 
-      <div className="buttons">
-        <div onClick={handlePrev} className="left_btn"></div>
-        <div onClick={handleNext} className="right_btn"></div>
+      <div className="slider_buttons">
+        <div onClick={handlePrev} className="slider_buttons_left_btn"></div>
+        <div onClick={handleNext} className="slider_buttons_right_btn"></div>
       </div>
     </>
   );

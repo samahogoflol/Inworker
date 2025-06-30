@@ -1,23 +1,23 @@
-.vacancy_grid {
+.vacancy_cards_header {
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.vacancy_cards_grid {
   justify-items: center;
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, 480px);
 }
 
-.header_vacancy {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.vacancy {
-  margin-top: 0px;
+.vacancy_cards_grid_card {
   margin-bottom: 50px;
   justify-content: center;
 }
 
-.card {
+.single_card {
   border: solid;
   border-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.35);
@@ -25,40 +25,36 @@
   width: 370px;
 }
 
-.img {
-  margin-bottom: 10px;
-}
-
-.img img {
+.single_card_vacancy_img {
   width: 100%;
   overflow: hidden;
   height: 300px;
   border-radius: 7px;
 }
 
-.title {
+.single_card_title {
   margin-left: 20px;
   margin-bottom: 15 px;
 }
 
-.card_discription li {
-  margin-bottom: 6px;
+.single_card_description li {
+  margin-bottom: 5px;
   font-size: 15.5px;
 }
 
-.discription_list {
+.single_card_description_list {
   margin-left: 20px;
 }
 
-.discription_list li {
+.single_card_description_list li {
   list-style-type: none;
 }
 
-.span_discroption {
+.single_card_span_description {
   font-weight: bold;
 }
 
-.span_discroption li {
+.single_card_span_description li {
   margin-bottom: 10px;
 }
 
@@ -72,7 +68,8 @@
   height: 50px;
 }
 
-.btn_look_all_vacancion {
+.vacancies_card_page_btn_see_all_vacancies,
+.vacancies_card_page_btn_see_more_vacancies {
   display: block;
   margin: 0 auto;
   justify-content: center;
@@ -81,22 +78,4 @@
   height: 50px;
   border-radius: 10px;
   margin-bottom: 30px;
-}
-
-.see_more_vacancies {
-  display: block;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 50px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-.input,
-select,
-button {
-  height: 40px;
-  width: 200px;
 }

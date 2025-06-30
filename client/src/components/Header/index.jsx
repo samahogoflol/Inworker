@@ -1,24 +1,24 @@
-import "./header.css";
-
 import { Link, NavLink } from "react-router-dom";
 
-import telegram from "../../images/telegram.png";
-import viber from "../../images/viber.png";
-import telefon from "../../images/telefon.png";
+import telegramIcon from "../../images/telegram.png";
+import viberIcon from "../../images/viber.png";
+import telefonIcon from "../../images/telefon.png";
+
+import "./style.css";
+
+import { telegramUrl, viberUrl, contactNumberMenedgerOne } from "../../utils/contacts";
 
 const Header = () => {
-  const telegramUrl = "https://t.me/robotavpolshi_inworker";
-
   return (
     <div>
-      <header className="app_header">
-        <h2 className="main_logo">
-          <NavLink end to="/">
+      <header className="header">
+        <h2>
+          <NavLink end to="http://localhost:3000/">
             <span style={{ color: "#9e3004e7" }}>IN</span>WORKER
           </NavLink>
         </h2>
-        <nav className="nav_header">
-          <ul className="nav_list_header">
+        <nav className="header_nav">
+          <ul className="header_nav_list">
             <li>
               <NavLink end style={({ isActive }) => ({ color: isActive ? "#9f0013" : "black" })} to="/">
                 Головна
@@ -34,38 +34,18 @@ const Header = () => {
                 Вакансії
               </NavLink>
             </li>
-            {/* <li>
-              <NavLink end style={({ isActive }) => ({ color: isActive ? "#9f0013" : "black" })} to="#">
-                Спіпраця з нами
-              </NavLink>
-            </li>
-            <li>
-              <NavLink end style={({ isActive }) => ({ color: isActive ? "#9f0013" : "black" })} to="#">
-                Контакти
-              </NavLink>
-            </li> */}
           </ul>
-          <a target="_blank" href={telegramUrl}>
-            <img
-              src={telegram}
-              alt="Посилання на телеграм канал компанії"
-              width={"45px"}
-              height={"45px"}
-              style={{ borderRadius: "50%" }}
-            />
-          </a>
-          <Link to="/" target="_self">
-            <img src={viber} alt="Посилання вайбер компанії" width={"45px"} height={"45px"} style={{ borderRadius: "50%" }} />
-          </Link>
-          <Link to="/" target="_self">
-            <img
-              src={telefon}
-              alt="Зателефонувати менеджеру компанії, для консультації"
-              width={"45px"}
-              height={"45px"}
-              style={{ borderRadius: "50%" }}
-            />
-          </Link>
+          <div className="header_nav_contact_icons">
+            <a className=" " target="_blank" href={telegramUrl}>
+              <img src={telegramIcon} alt="Посилання на телеграм канал компанії" />
+            </a>
+            <a target="_blank" href={viberUrl}>
+              <img src={viberIcon} alt="Посилання вайбер компанії" />
+            </a>
+            <a target="_blank" href={contactNumberMenedgerOne}>
+              <img src={telefonIcon} alt="Зателефонувати менеджеру компанії, для консультації" />
+            </a>
+          </div>
         </nav>
       </header>
     </div>

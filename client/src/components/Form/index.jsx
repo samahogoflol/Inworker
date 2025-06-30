@@ -1,8 +1,9 @@
 import React from "react";
-import { Formik } from "formik";
-import { useFormik } from "formik";
+import { useFormik, Formik } from "formik";
 
-import "./form.css";
+import "./style.css";
+
+import { contactNumberMenedgerOne } from "../../utils/contacts";
 
 const validate = (values) => {
   const nameRegex = /^[a-zA-Zа-яА-ЯіїєІЇЄґҐ'’\- ]+$/;
@@ -42,25 +43,25 @@ const Form = () => {
 
   return (
     <>
-      <h2 className="free_consultation">Безкоштовна консультація</h2>
-      <div className="formCard" action="#">
-        <div className="left_side">
-          <h3 className="form_text_left">Заповніть заявку, та наші менеджери якнайшвидше зв’яжуться з Вами</h3>
-          <h4 className="form_text_left">
+      <h2 className="form_header">Безкоштовна консультація</h2>
+      <div className="form_card" action="#">
+        <section className="form_card_left_side">
+          <h3 className="form_card_text_left">Заповніть заявку, та наші менеджери якнайшвидше зв’яжуться з Вами</h3>
+          <p className="form_card_text_left">
             Ми проведемо для Вас безкоштовну консультацію, розповімо більш детально про роботу, та з радістю дамо відповідь на всі Ваші
             запитання, що до роботи в Польщі
-          </h4>
-          <button className="btn_phone">
-            <a className="form_phone" href="tel:+380664844563">
+          </p>
+          <button className="form_card_btn_number">
+            <a className="form_card_numer_text" href={contactNumberMenedgerOne}>
               +380664844563 - Анатолій
             </a>
           </button>
-        </div>
-        <div className="right_side">
-          <form className="form" onSubmit={formik.handleSubmit} action="#">
-            <p className="text_over_btn">Введіть Ваше ім'я</p>
+        </section>
+        <div>
+          <form className="form_inputs" onSubmit={formik.handleSubmit} action="#">
+            <p className="form_inputs_titles">Введіть Ваше ім'я</p>
             <input
-              className="input_name"
+              className="form_input_write_name"
               type="text"
               name="name"
               value={formik.values.name}
@@ -68,10 +69,9 @@ const Form = () => {
               onBlur={formik.handleBlur}
             />
             {formik.errors.name && formik.touched.name ? <div className="error">{formik.errors.name}</div> : null}
-            <p className="text_over_btn1">Номер телефону</p>
-            //{" "}
+            <p className="form_inputs_titles">Номер телефону</p>
             <input
-              className="input_phone"
+              className="forn_input_write_number"
               type="text"
               name="number"
               placeholder="Введіть номер телефону з кодом країни (+380..)"
@@ -80,7 +80,7 @@ const Form = () => {
               onBlur={formik.handleBlur}
             />
             {formik.errors.number && formik.touched.number ? <div className="error">{formik.errors.number}</div> : null}
-            <button type="submit" className="btn_send">
+            <button type="submit" className="form_btn_send_form">
               Отримати консультацію
             </button>
           </form>

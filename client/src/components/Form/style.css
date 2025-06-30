@@ -1,10 +1,10 @@
-.free_consultation {
+.form_header {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
 }
 
-.formCard {
+.form_card {
   display: flex;
   width: 1000px;
   height: 390px;
@@ -13,12 +13,12 @@
   border-radius: 15px;
 }
 
-.form_phone {
-  color: white;
-  font-size: 18px;
+.form_card_left_side {
+  max-width: 500px;
+  padding: 15px;
 }
 
-.btn_phone {
+.form_card_btn_number {
   width: 300px;
   height: 50px;
   border-radius: 10px;
@@ -28,12 +28,12 @@
   margin-left: 15px;
 }
 
-.left_side {
-  max-width: 500px;
-  padding: 15px;
+.form_card_numer_text {
+  color: white;
+  font-size: 18px;
 }
 
-.form_text_left {
+.form_card_text_left {
   color: white;
   max-width: 350px;
   margin: 15px;
@@ -43,19 +43,22 @@
   margin-bottom: 30px;
 }
 
-.right_side {
-  max-width: 500px;
-}
-
-.form {
+.form_inputs {
   display: flex;
   flex-direction: column;
   align-items: end;
   width: 550px;
 }
 
-.input_name,
-.input_phone {
+.form_inputs_titles {
+  margin-bottom: 5px;
+  color: white;
+  margin-right: 200px;
+  margin-top: 30px;
+}
+
+.form_input_write_name,
+.forn_input_write_number {
   width: 350px;
   height: 50px;
   background-color: rgb(43, 41, 41);
@@ -65,23 +68,7 @@
   padding: 15px;
 }
 
-.text_over_btn {
-  margin-bottom: 10px;
-  text-align: center;
-  color: white;
-  margin-right: 204px;
-  margin-top: 30px;
-}
-
-.text_over_btn1 {
-  margin-bottom: 10px;
-  text-align: center;
-  color: white;
-  margin-right: 210px;
-  margin-top: 20px;
-}
-
-.btn_send {
+.form_btn_send_form {
   width: 350px;
   height: 50px;
   background-color: rgb(43, 41, 41);
@@ -98,12 +85,12 @@
 }
 
 .btn_send:hover,
-.btn_phone {
+.form_card_btn_number {
   color: white;
   background-color: rgb(45, 187, 75);
 }
 
-.input_name:hover,
-.input_phone:hover {
+.form_input_write_name:hover,
+.forn_input_write_number:hover {
   opacity: 0.6;
 }

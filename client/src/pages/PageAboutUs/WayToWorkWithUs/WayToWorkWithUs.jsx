@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
-import "./wayToWorkWithUs.css";
+import "./style.css";
 
 const WaytoWorkWithUs = ({ cardsTemplate }) => {
-  const [visibleCards, setVisibleCards] = useState(0); // Відповідає за кількість видимих карток
+  const [visibleCards, setVisibleCards] = useState(0);
   const myRef = useRef(null);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const WaytoWorkWithUs = ({ cardsTemplate }) => {
                 return prev;
               }
             });
-          }, 1000); 
+          }, 1000);
         }
       },
       { threshold: 0.5 }
@@ -37,18 +37,11 @@ const WaytoWorkWithUs = ({ cardsTemplate }) => {
 
   return (
     <>
-      <h2 className="way_to_work_with_us_title">
-        З нами Ваш шлях до роботи буде простим, та зрозумілим
-      </h2>
-      <div className="grid_way_to_work_with_us" ref={myRef}>
+      <h2 className="way_to_work_with_us_title">З нами Ваш шлях до роботи буде простим, та зрозумілим</h2>
+      <div className="way_to_work_with_us_grid" ref={myRef}>
         {cardsTemplate.map((card, index) => (
-          <div
-            key={index}
-            className={`card_way_to_work_with_us ${
-              index < visibleCards ? "_active_card_about_us" : ""
-            }`}
-          >
-            <p className="card_text">{card.text}</p>
+          <div key={index} className={`way_to_work_with_us_card ${index < visibleCards ? "way_to_work_with_us_active" : ""}`}>
+            <p>{card.text}</p>
           </div>
         ))}
       </div>

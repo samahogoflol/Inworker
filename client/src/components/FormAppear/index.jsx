@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FastField, useFormik } from "formik";
 
-import "./formAppear.css";
+import "./style.css";
 
-import imgTest from "../../images/img_test.webp";
+import imgFormApper from "../../images/img_test.webp";
 
 const validate = (values) => {
   const nameRegex = /^[a-zA-Zа-яА-ЯіїєІЇЄґҐ'’\- ]+$/;
@@ -13,7 +13,7 @@ const validate = (values) => {
   const errors = {};
 
   if (!values.name) {
-    errors.name = "'Обов'язкове поле!";
+    errors.name = "Обов'язкове поле!";
   } else if (values.name.length < 2) {
     errors.name = "Введіть корректне ім'я";
   } else if (!nameRegex.test(values.name)) {
@@ -23,7 +23,7 @@ const validate = (values) => {
   }
 
   if (!values.number) {
-    errors.number = "'Обов'язкове поле!";
+    errors.number = "Обов'язкове поле!";
   } else if (!phoneRegex.test(values.number)) {
     errors.number = "Введіть корректний номер телефону";
   }
@@ -60,18 +60,21 @@ const FormAppear = ({ setVisibleForm }) => {
 
   return (
     <>
-      <div className={`_hideForm ${setVisibleForm ? "popup-overlay" : null}`} onClick={() => setVisibleForm(false)}>
+      <div className={`hide_form ${setVisibleForm ? "form_appear_popup-overlay" : null}`} onClick={() => setVisibleForm(false)}>
         {setVisibleForm ? (
-          <button className={`_hideForm ${setVisibleForm ? "close_btn" : null}`} onClick={() => setVisibleForm(false)}></button>
+          <button
+            className={`hide_form ${setVisibleForm ? "form_appear_close_btn" : null}`}
+            onClick={() => setVisibleForm(false)}
+          ></button>
         ) : null}
       </div>
       {setVisibleForm && (
-        <div className="formAppear">
-          <img className="img_form_appear" src={imgTest} alt="Отримати безкоштовну консультацію" />
+        <div className="form_container">
+          <img className="form_container_img" src={imgFormApper} alt="Отримати безкоштовну консультацію" />
           <form className="form_appear" onSubmit={formik.handleSubmit} action="#">
-            <p className="input_appear_text">Введіть Ваше ім'я</p>
+            <p>Введіть Ваше ім'я</p>
             <input
-              className="input_appear"
+              className="form_appear_input"
               type="text"
               name="name"
               placeholder="Світлана"
@@ -79,10 +82,10 @@ const FormAppear = ({ setVisibleForm }) => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.errors.name && formik.touched.name ? <div className="error">{formik.errors.name}</div> : null}
-            <p className="input_appear_text"> Номер телефону</p>{" "}
+            {formik.errors.name && formik.touched.name ? <div className="__eror_validation"> {formik.errors.name}</div> : null}
+            <p> Номер телефону</p>
             <input
-              className="input_appear"
+              className="form_appear_input"
               type="text"
               name="number"
               placeholder="Введіть номер телефону з кодом країни (+380..)"
@@ -90,8 +93,8 @@ const FormAppear = ({ setVisibleForm }) => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.errors.number && formik.touched.number ? <div className="error">{formik.errors.number}</div> : null}
-            <button type="submit" className="btn_appear_send">
+            {formik.errors.number && formik.touched.number ? <div className="__eror_validation">{formik.errors.number}</div> : null}
+            <button type="submit" className="form_appear_send_form">
               Отримати консультацію
             </button>
           </form>

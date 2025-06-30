@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FormAppear from "../../../components/FormAppear";
 
-import "./mainFon.css";
+import "./style.css";
 
 import headFon from "../../../images/headFon.png";
 
@@ -25,15 +25,12 @@ const MainFon = () => {
   return (
     <>
       {!visibleForm ? null : <FormAppear setVisibleForm={setVisibleForm} />}
-      <div className="main_form">
-        <div className="image_container">
-          <img className="main_fon" src={headFon} alt="Замовити зворотній зв’зок" />
-          <div className="overlay"> </div>
-        </div>
-        <h1 className={"overlay_icon"}>
+      <div className="main_fon">
+        <img className="main_fon_image" src={headFon} alt="Замовити зворотній зв’зок" />
+        <h1 className="main_fon_overlay_icon">
           <span style={{ color: "#9e3004e7" }}>IN</span>WORKER
         </h1>
-        <h2 className={`overlay_text ${animation ? "_active" : ""}`}>
+        <h2 className={`main_fon_overlay_text ${animation ? "main_fon_animation" : ""}`}>
           Ми пропонуємо найкращу роботу в Польщі <br />
           Заробітна плата від 50.000 грн/міс
           <br />
@@ -41,7 +38,7 @@ const MainFon = () => {
           до останнього робочого дня
         </h2>
         {
-          <button onClick={() => setVisibleForm(true)} className={`overlay_btn ${animation ? "_active" : ""}`}>
+          <button onClick={() => setVisibleForm(true)} className={`main_fon_btn ${animation ? "main_fon_animation" : ""}`}>
             Підібрати вакансію
           </button>
         }

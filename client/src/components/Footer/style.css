@@ -1,9 +1,3 @@
-nav {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 400px);
@@ -13,8 +7,27 @@ nav {
   background-color: rgb(23, 46, 46);
 }
 
-.nav_footer_socials {
+nav {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.footer_nav_socials {
   font-size: 35px;
+}
+
+.footer_nav_socials img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.footer_nav_socials {
+  font-size: 35px;
+}
+.footer_nav_socials img {
+  width: 60px;
+  border-radius: 50%;
 }
 
 .footer_socials_block {
@@ -25,36 +38,42 @@ nav {
   gap: 20px;
 }
 
-.nav_footer_socials img {
-  width: 60px;
-  border-radius: 50%;
-}
-
-.nav_list_footer {
+.footer_nav_list {
   font-size: 25px;
 }
 
-.nav_list_footer li {
+.footer_nav_list li {
   margin-bottom: 10px;
   list-style-type: none;
 }
 
-.nav_contact {
+.footer_nav_contacts {
   font-size: 25px;
 }
 
-.nav_contact li {
+.footer_nav_contacts li {
   margin-bottom: 10px;
   list-style-type: none;
 }
+.footer_contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-.privacy_policy {
+.footer_text_privacy_policy {
+  margin-top: 4px;
+  font-size: larger;
+  opacity: 0.8;
+}
+
+.footer_privacy_policy {
   display: flex;
   justify-content: center;
   background-color: rgb(23, 46, 46);
 }
 
-.avtor_policy {
+.footer_avtor_policy {
   display: flex;
   position: relative;
   margin-bottom: 10px;
@@ -65,7 +84,7 @@ nav {
   border-radius: 50%;
 }
 
-.avtor_policy::before {
+.footer_avtor_policy::before {
   position: absolute;
   top: 5.5px;
   left: 9.5px;
@@ -73,7 +92,7 @@ nav {
   color: grey;
 }
 
-.avtor_policy::after {
+.footer_avtor_policy::after {
   position: absolute;
   top: 3.5px;
   left: 4.4px;
@@ -86,14 +105,7 @@ nav {
   color: grey;
 }
 
-.text_privacy_policy {
-  margin-top: 4px;
-  font-size: larger;
-  opacity: 0.8;
-}
-
-.footer_contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.footer_nav_contacts_header {
+  margin-bottom: 20px;
+  color: rgb(5, 235, 235);
 }

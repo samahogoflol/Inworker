@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 
-import { getAllVacancies, getVacancyById } from "../../api/vacancyFromDB";
+import { getAllVacancies } from "../../api/vacancyFromDB";
 
 import { filterVacanciesByCity, filterVacanciesByContract, filteredVacancyByTitle } from "../../utils/vacancyFilter";
 

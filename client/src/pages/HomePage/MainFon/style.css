@@ -1,18 +1,14 @@
-.main_form {
-  position: relative;
-  display: inline-block;
-}
-
 .main_fon {
   width: 100%;
 }
 
-.image_container {
+.main_fon_image {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.overlay_icon {
+.main_fon_overlay_icon {
   position: absolute;
   top: 18%;
   left: 22%;
@@ -21,7 +17,7 @@
   z-index: 1;
 }
 
-.overlay_text {
+.main_fon_overlay_text {
   position: absolute;
   top: 31%;
   left: 22.4%;
@@ -33,7 +29,7 @@
   transition: all 0.8s ease 0s;
 }
 
-.overlay_btn {
+.main_fon_btn {
   position: absolute;
   top: 47%;
   left: 22.4%;
@@ -51,7 +47,7 @@
 
 /* Анімації */
 
-._active {
+.main_fon_animation {
   transform: translate(0px, 0%);
   opacity: 1;
 }

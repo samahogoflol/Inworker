@@ -8,21 +8,14 @@ import ImageCarousel from "../ImageCarousel";
 import Form from "../Form";
 
 import { getVacancyById } from "../../api/vacancyFromDB";
-import { zleceniaContract, oPraciContract } from "../../utils/SalaryConstants";
+import { zleceniaContract, oPraciContract } from "../../utils/salary";
 
 import "./style.css";
 
 const SinglePage = () => {
-  const star = <div className="star"></div>;
-
   const [singlePage, setSinglePage] = useState(null);
-  const [modalWindowOpen, setModalWindowOpen] = useState(false);
 
   const { vacancyId } = useParams();
-
-  const handleClose = () => {
-    setModalWindowOpen(false);
-  };
 
   useEffect(() => {
     getVacancyById(vacancyId).then((res) => {
@@ -42,7 +35,7 @@ const SinglePage = () => {
           <div className="single_page">
             <div className="single_page_left_side">
               <h3>Коротко про головне : </h3>
-              <ul className="about_main">
+              <ul>
                 <li>Місто : {singlePage.city}</li>
                 <li>Трудовий договір : {singlePage.contract} </li>
                 <li>Проживання : {singlePage.hostel}</li>

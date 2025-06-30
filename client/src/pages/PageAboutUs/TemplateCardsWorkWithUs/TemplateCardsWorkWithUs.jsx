@@ -1,5 +1,3 @@
-import React from "react";
-
 import WaytoWorkWithUs from "../WayToWorkWithUs/WayToWorkWithUs";
 
 const cardsTemplate = [

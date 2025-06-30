@@ -1,0 +1,43 @@
+.about_our_company_header {
+  max-width: 1000px;
+  text-align: center;
+  margin-left: 450px;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.about_our_company_container {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  margin-top: 50px;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card_about_our_company_title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.card_about_our_company_black,
+.card_about_our_company_green,
+.card_about_our_company_grey {
+  color: white;
+  border-radius: 25px;
+  height: 250px;
+  padding: 20px;
+}
+
+.card_about_our_company_green {
+  background-color: rgb(54, 185, 54);
+}
+
+.card_about_our_company_grey {
+  background-color: rgb(177, 176, 176);
+}
+
+.card_about_our_company_black {
+  background-color: rgb(36, 35, 35);
+}

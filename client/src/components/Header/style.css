@@ -1,4 +1,4 @@
-.app_header {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,26 +6,31 @@
   background-color: rgb(23, 46, 46);
 }
 
-.app_header h2 {
+.header h2 {
   font-size: 30px;
 }
 
-.nav_header {
+.header_nav {
   display: flex;
   align-items: center;
 }
+.header_nav li {
+  margin-right: 40px;
+  list-style-type: none;
+}
 
-.nav_list_header {
+.header_nav img {
+  margin-left: 15px;
+}
+
+.header_nav_list {
   margin-left: 45px;
   display: flex;
   align-items: center;
 }
 
-.nav_header li {
-  margin-right: 40px;
-  list-style-type: none;
-}
-
-.nav_header img {
-  margin-left: 15px;
+.header_nav_contact_icons img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
