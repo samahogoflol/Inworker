@@ -5,6 +5,7 @@ import { getAllVacancies } from "../../api/vacancyFromDB";
 // не бачу особливого сенсу тримати ці функції в utils, там мають бути більше глобальні функції типу порахування часу і тд, функції які ти можеш юзнути будь-де незалежно від контексту
 // ще я би радив глянути React Query, дуже хороша ліба щоб фечити дані, сама все кешує, на хуках, короче топ
 // https://tanstack.com/query/latest
+
 import {
   filterVacanciesByCity,
   filterVacanciesByContract,
