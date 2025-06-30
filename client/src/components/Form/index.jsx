@@ -5,7 +5,11 @@ import "./style.css";
 
 import { contactNumberMenedgerOne } from "../../utils/contacts";
 
+// я би виніс цю функцію в окремий файл тут же, ./validation.js
+// ще раджу для валідації юзати лібу YUP, бо писати самому валідацію через іфи це дуже зайобно)
+// https://www.npmjs.com/package/yup
 const validate = (values) => {
+  // а оці регекси можна винести десь у файл ./utils/constants - ти зараз цього файлу не маєш, але по факту salary.js i contacts.js - це воно і є. Можна то в 1 файлі тримати все
   const nameRegex = /^[a-zA-Zа-яА-ЯіїєІЇЄґҐ'’\- ]+$/;
   const phoneRegex = /^\d{10,15}$/;
   const hasLettersRegex = /[a-zA-Zа-яА-ЯіїєІЇЄґҐ]/;
@@ -32,6 +36,7 @@ const validate = (values) => {
 };
 
 const Form = () => {
+  // тут би я додав деструктуризацію - const { values, handleSubmit, handleBlur ... } = useFormik
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -46,9 +51,12 @@ const Form = () => {
       <h2 className="form_header">Безкоштовна консультація</h2>
       <div className="form_card" action="#">
         <section className="form_card_left_side">
-          <h3 className="form_card_text_left">Заповніть заявку, та наші менеджери якнайшвидше зв’яжуться з Вами</h3>
+          <h3 className="form_card_text_left">
+            Заповніть заявку, та наші менеджери якнайшвидше зв’яжуться з Вами
+          </h3>
           <p className="form_card_text_left">
-            Ми проведемо для Вас безкоштовну консультацію, розповімо більш детально про роботу, та з радістю дамо відповідь на всі Ваші
+            Ми проведемо для Вас безкоштовну консультацію, розповімо більш
+            детально про роботу, та з радістю дамо відповідь на всі Ваші
             запитання, що до роботи в Польщі
           </p>
           <button className="form_card_btn_number">
@@ -58,7 +66,11 @@ const Form = () => {
           </button>
         </section>
         <div>
-          <form className="form_inputs" onSubmit={formik.handleSubmit} action="#">
+          <form
+            className="form_inputs"
+            onSubmit={formik.handleSubmit}
+            action="#"
+          >
             <p className="form_inputs_titles">Введіть Ваше ім'я</p>
             <input
               className="form_input_write_name"
@@ -68,7 +80,9 @@ const Form = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.errors.name && formik.touched.name ? <div className="error">{formik.errors.name}</div> : null}
+            {formik.errors.name && formik.touched.name ? (
+              <div className="error">{formik.errors.name}</div>
+            ) : null}
             <p className="form_inputs_titles">Номер телефону</p>
             <input
               className="forn_input_write_number"
@@ -79,7 +93,9 @@ const Form = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.errors.number && formik.touched.number ? <div className="error">{formik.errors.number}</div> : null}
+            {formik.errors.number && formik.touched.number ? (
+              <div className="error">{formik.errors.number}</div>
+            ) : null}
             <button type="submit" className="form_btn_send_form">
               Отримати консультацію
             </button>

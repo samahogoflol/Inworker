@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+// файл би мав з маленької називатися, ми не називаємо файли з великої літери, тільки якщо це Реакт компонент, бо там такі правила
+
 const VacancySchema = new mongoose.Schema({
   title: { type: String, required: true },
   pageTitle: { type: String, required: true },

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import "./style.css";
 
+// для каруселі раджу подивитися react-slick
+// https://www.npmjs.com/package/react-slick
 const ImageCarousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -14,7 +16,9 @@ const ImageCarousel = ({ images }) => {
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   return (
@@ -25,9 +29,17 @@ const ImageCarousel = ({ images }) => {
           src={images[(currentIndex - 1 + images.length) % images.length]}
           alt={"Це блок з відгуками"}
         />
-        <img className="slider_img_center" src={images[currentIndex]} alt={"Це блок з відгуками"} />
+        <img
+          className="slider_img_center"
+          src={images[currentIndex]}
+          alt={"Це блок з відгуками"}
+        />
 
-        <img className="slider_img_right" src={images[(currentIndex + 1) % images.length]} alt={"Це блок з відгуками"} />
+        <img
+          className="slider_img_right"
+          src={images[(currentIndex + 1) % images.length]}
+          alt={"Це блок з відгуками"}
+        />
       </div>
 
       <div className="slider_buttons">
