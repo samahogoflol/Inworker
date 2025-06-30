@@ -4,7 +4,7 @@ import { FastField, useFormik } from "formik";
 import "./style.css";
 
 import imgFormApper from "../../images/img_test.webp";
-
+// те саме що і у Form
 const validate = (values) => {
   const nameRegex = /^[a-zA-Zа-яА-ЯіїєІЇЄґҐ'’\- ]+$/;
   const phoneRegex = /^\d{10,15}$/;
@@ -60,18 +60,33 @@ const FormAppear = ({ setVisibleForm }) => {
 
   return (
     <>
-      <div className={`hide_form ${setVisibleForm ? "form_appear_popup-overlay" : null}`} onClick={() => setVisibleForm(false)}>
+      <div
+        className={`hide_form ${
+          setVisibleForm ? "form_appear_popup-overlay" : null
+        }`}
+        onClick={() => setVisibleForm(false)}
+      >
         {setVisibleForm ? (
           <button
-            className={`hide_form ${setVisibleForm ? "form_appear_close_btn" : null}`}
+            className={`hide_form ${
+              setVisibleForm ? "form_appear_close_btn" : null
+            }`}
             onClick={() => setVisibleForm(false)}
           ></button>
         ) : null}
       </div>
       {setVisibleForm && (
         <div className="form_container">
-          <img className="form_container_img" src={imgFormApper} alt="Отримати безкоштовну консультацію" />
-          <form className="form_appear" onSubmit={formik.handleSubmit} action="#">
+          <img
+            className="form_container_img"
+            src={imgFormApper}
+            alt="Отримати безкоштовну консультацію"
+          />
+          <form
+            className="form_appear"
+            onSubmit={formik.handleSubmit}
+            action="#"
+          >
             <p>Введіть Ваше ім'я</p>
             <input
               className="form_appear_input"
@@ -82,7 +97,9 @@ const FormAppear = ({ setVisibleForm }) => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.errors.name && formik.touched.name ? <div className="__eror_validation"> {formik.errors.name}</div> : null}
+            {formik.errors.name && formik.touched.name ? (
+              <div className="__eror_validation"> {formik.errors.name}</div>
+            ) : null}
             <p> Номер телефону</p>
             <input
               className="form_appear_input"
@@ -93,7 +110,9 @@ const FormAppear = ({ setVisibleForm }) => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.errors.number && formik.touched.number ? <div className="__eror_validation">{formik.errors.number}</div> : null}
+            {formik.errors.number && formik.touched.number ? (
+              <div className="__eror_validation">{formik.errors.number}</div>
+            ) : null}
             <button type="submit" className="form_appear_send_form">
               Отримати консультацію
             </button>

@@ -4,6 +4,8 @@ import PageAboutUs from "./pages/PageAboutUs";
 import PageAllVacancies from "./pages/PageAllVacancies";
 import SinglePage from "./components/SinglePage";
 
+// Так як ти маєш хедер і футер на кожній сторінці, простіше це додати тут перед і після <Router наприклад, ну або якщо там є лінки, то вже в ньому
+
 const App = () => {
   return (
     <Router>
