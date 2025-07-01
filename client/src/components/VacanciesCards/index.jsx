@@ -7,14 +7,14 @@ import { zleceniaContract, oPraciContract } from "../../utils/salary";
 import "./style.css";
 
 const VacanciesCards = ({ enablePagination }) => {
-  const { filteredVacancies } = useContext(VacancyContext);
+  const { data } = useContext(VacancyContext);
   const [visibleCount, setVisibleCount] = useState(6);
 
   return (
     <>
       <h2 className="vacancy_cards_header">Актуальні вакансії</h2>
       <div className="vacancy_cards_grid">
-        {filteredVacancies.slice(0, visibleCount).map((vacancy) => (
+        {data.slice(0, visibleCount).map((vacancy) => (
           <div key={vacancy._id} className="vacancy_cards_grid_card">
             <div className="single_card">
               <div>
@@ -61,7 +61,7 @@ const VacanciesCards = ({ enablePagination }) => {
         </NavLink>
       ) : null}
 
-      {enablePagination && visibleCount < filteredVacancies.length ? (
+      {enablePagination && visibleCount < data.length ? (
         <button onClick={() => setVisibleCount(visibleCount + 6)} className="vacancies_card_page_btn_see_more_vacancies">
           Загрузити ще вакансії
         </button>

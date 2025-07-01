@@ -16,11 +16,7 @@ const VacancyFilter = () => {
     setSearchVacancyName,
   } = useContext(VacancyContext);
 
-  // у назві функції не треба описувати ХТМЛ елемент. Зазвичай початок називають 2 способами
-  // 1 - onClearFilters
-  // 2 - handleClearFilters
-  // тобто або on або handle - я звик писати on бо так коротше
-  const btnClearFilters = () => {
+  const onClear = () => {
     setSelectedCity("");
     setSelectedContract("");
     setSearchVacancyName("");
@@ -36,10 +32,7 @@ const VacancyFilter = () => {
           onChange={(e) => setSearchVacancyName(e.target.value)}
         ></input>
 
-        <select
-          value={selectedCity}
-          onChange={(e) => setSelectedCity(e.target.value)}
-        >
+        <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
           <option value="">Оберіть місто / Всі міста</option>
           {uniqueCities.map((item) => (
             <option key={item} value={item}>
@@ -47,10 +40,7 @@ const VacancyFilter = () => {
             </option>
           ))}
         </select>
-        <select
-          value={selectedContract}
-          onChange={(e) => setSelectedContract(e.target.value)}
-        >
+        <select value={selectedContract} onChange={(e) => setSelectedContract(e.target.value)}>
           <option value="">Трудовий договір</option>
           {uniqueContractType.map((item) => (
             <option key={item} value={item}>
@@ -58,7 +48,7 @@ const VacancyFilter = () => {
             </option>
           ))}
         </select>
-        <button className="btn_clear_filter" onClick={() => btnClearFilters()}>
+        <button className="btn_clear_filter" onClick={() => onClear()}>
           Очистити фільтри
         </button>
       </div>

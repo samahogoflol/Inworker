@@ -7,7 +7,7 @@ import MarqueeText from "../MarqueeText";
 import ImageCarousel from "../ImageCarousel";
 import Form from "../Form";
 
-import { getVacancyById } from "../../api/vacancyFromDB";
+import { getVacancyById } from "../../api/vacancies";
 import { zleceniaContract, oPraciContract } from "../../utils/salary";
 
 import "./style.css";

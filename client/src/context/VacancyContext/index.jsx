@@ -1,16 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 
-import { getAllVacancies } from "../../api/vacancyFromDB";
-
-// не бачу особливого сенсу тримати ці функції в utils, там мають бути більше глобальні функції типу порахування часу і тд, функції які ти можеш юзнути будь-де незалежно від контексту
-// ще я би радив глянути React Query, дуже хороша ліба щоб фечити дані, сама все кешує, на хуках, короче топ
-// https://tanstack.com/query/latest
-
-import {
-  filterVacanciesByCity,
-  filterVacanciesByContract,
-  filteredVacancyByTitle,
-} from "../../utils/vacancyFilter";
+import { getAllVacancies } from "../../api/vacancies";
 
 export const VacancyContext = createContext();
 
@@ -25,6 +16,33 @@ export const VacancyProvider = ({ children }) => {
   const [selectedContract, setSelectedContract] = useState("");
   const [searchVacancyName, setSearchVacancyName] = useState("");
 
+  const filterVacanciesByCity = (allVacancies, cityValue) => {
+    if (!cityValue) {
+      return allVacancies;
+    } else {
+      return allVacancies.filter((vacancy) => vacancy.city.toLowerCase() === cityValue.toLowerCase());
+    }
+  };
+
+  const filterVacanciesByContract = (allVacancies, contractValue) => {
+    if (!contractValue) {
+      return allVacancies;
+    } else {
+      return allVacancies.filter((vacancy) => vacancy.contract.toLowerCase() === contractValue.toLowerCase());
+    }
+  };
+
+  const filteredVacancyByTitle = (allVacancies, searchTerm) => {
+    if (!searchTerm) {
+      return allVacancies;
+    } else {
+      const lowerCaseSearchTerm = searchTerm.toLowerCase();
+      return allVacancies.filter((vacancy) => {
+        return vacancy.title.toLowerCase().includes(lowerCaseSearchTerm);
+      });
+    }
+  };
+
   useEffect(() => {
     getAllVacancies().then((res) => {
       setVacancies(res);
@@ -32,16 +50,10 @@ export const VacancyProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    let currentFiltered = vacancies;
+    let currentFiltered = data;
     currentFiltered = filterVacanciesByCity(currentFiltered, selectedCity);
-    currentFiltered = filterVacanciesByContract(
-      currentFiltered,
-      selectedContract
-    );
-    currentFiltered = filteredVacancyByTitle(
-      currentFiltered,
-      searchVacancyName
-    );
+    currentFiltered = filterVacanciesByContract(currentFiltered, selectedContract);
+    currentFiltered = filteredVacancyByTitle(currentFiltered, searchVacancyName);
     setFilteredVacancies(currentFiltered);
   }, [vacancies, selectedCity, selectedContract, searchVacancyName]);
 
@@ -59,9 +71,22 @@ export const VacancyProvider = ({ children }) => {
     }
   }, [vacancies]);
 
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["vacancies"],
+    queryFn: getAllVacancies,
+  });
+
+  if (isLoading) {
+    return <p>Вакансії загружаються...</p>;
+  }
+  if (isError) {
+    return <p>{error.message}</p>;
+  }
+
   return (
     <VacancyContext.Provider
       value={{
+        data,
         vacancies,
         setVacancies,
         filteredVacancies,
