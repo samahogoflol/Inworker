@@ -6,6 +6,11 @@ import { getAllVacancies } from "../../api/vacancies";
 export const VacancyContext = createContext();
 
 export const VacancyProvider = ({ children }) => {
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["vacancies"],
+    queryFn: getAllVacancies,
+  });
+
   const [vacancies, setVacancies] = useState([]);
   const [filteredVacancies, setFilteredVacancies] = useState([]);
 
@@ -70,11 +75,6 @@ export const VacancyProvider = ({ children }) => {
       setUniqueContractType(Array.from(contracts));
     }
   }, [vacancies]);
-
-  const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["vacancies"],
-    queryFn: getAllVacancies,
-  });
 
   if (isLoading) {
     return <p>Вакансії загружаються...</p>;
