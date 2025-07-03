@@ -8,7 +8,6 @@ export const getAllVacancies = async () => {
 
   return response.json();
 };
-
 export const getVacancyById = async (id) => {
   const url = `http://localhost:5000/api/vacancies/${id}`;
 

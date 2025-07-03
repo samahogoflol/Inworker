@@ -6,6 +6,7 @@ import "./style.css";
 
 const VacancyFilter = () => {
   const {
+    filteredVacancy,
     selectedCity,
     setSelectedCity,
     uniqueCities,

@@ -6,20 +6,44 @@ import { getAllVacancies } from "../../api/vacancies";
 export const VacancyContext = createContext();
 
 export const VacancyProvider = ({ children }) => {
-  const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["vacancies"],
-    queryFn: getAllVacancies,
-  });
-
-  const [vacancies, setVacancies] = useState([]);
-  const [filteredVacancies, setFilteredVacancies] = useState([]);
-
+  const [filteredVacancy, setFilteredVacancy] = useState([]);
   const [uniqueCities, setUniqueCities] = useState([]);
   const [uniqueContractType, setUniqueContractType] = useState([]);
 
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedContract, setSelectedContract] = useState("");
   const [searchVacancyName, setSearchVacancyName] = useState("");
+
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["vacancies"],
+    queryFn: getAllVacancies,
+  });
+
+  useEffect(() => {
+    let currentFiltered = data && Array.isArray(data) ? data : [];
+    currentFiltered = filterVacanciesByCity(currentFiltered, selectedCity);
+    currentFiltered = filterVacanciesByContract(currentFiltered, selectedContract);
+    currentFiltered = filteredVacancyByTitle(currentFiltered, searchVacancyName);
+    setFilteredVacancy(currentFiltered);
+  }, [data, selectedCity, selectedContract, searchVacancyName]);
+
+  useEffect(() => {
+    if (data && Array.isArray(data)) {
+      if (data.length > 0) {
+        const cities = new Set(data.map((vacancy) => vacancy.city));
+        setUniqueCities(Array.from(cities));
+      }
+    }
+  }, [data]);
+
+  useEffect(() => {
+    if (data && Array.isArray(data)) {
+      if (data.length > 0) {
+        const contracts = new Set(data.map((vacancy) => vacancy.contract));
+        setUniqueContractType(Array.from(contracts));
+      }
+    }
+  }, [data]);
 
   const filterVacanciesByCity = (allVacancies, cityValue) => {
     if (!cityValue) {
@@ -48,34 +72,6 @@ export const VacancyProvider = ({ children }) => {
     }
   };
 
-  useEffect(() => {
-    getAllVacancies().then((res) => {
-      setVacancies(res);
-    });
-  }, []);
-
-  useEffect(() => {
-    let currentFiltered = data;
-    currentFiltered = filterVacanciesByCity(currentFiltered, selectedCity);
-    currentFiltered = filterVacanciesByContract(currentFiltered, selectedContract);
-    currentFiltered = filteredVacancyByTitle(currentFiltered, searchVacancyName);
-    setFilteredVacancies(currentFiltered);
-  }, [vacancies, selectedCity, selectedContract, searchVacancyName]);
-
-  useEffect(() => {
-    if (vacancies.length > 0) {
-      const cities = new Set(vacancies.map((vacancy) => vacancy.city));
-      setUniqueCities(Array.from(cities));
-    }
-  }, [vacancies]);
-
-  useEffect(() => {
-    if (vacancies.length > 0) {
-      const contracts = new Set(vacancies.map((vacancy) => vacancy.contract));
-      setUniqueContractType(Array.from(contracts));
-    }
-  }, [vacancies]);
-
   if (isLoading) {
     return <p>Вакансії загружаються...</p>;
   }
@@ -87,10 +83,7 @@ export const VacancyProvider = ({ children }) => {
     <VacancyContext.Provider
       value={{
         data,
-        vacancies,
-        setVacancies,
-        filteredVacancies,
-        setFilteredVacancies,
+        filteredVacancy,
         selectedCity,
         setSelectedCity,
         searchVacancyName,
