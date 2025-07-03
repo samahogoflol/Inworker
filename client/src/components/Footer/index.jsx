@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "./style.css";
+import "./styles.css";
 
 import telegramIcon from "../../images/telegram.png";
 import viberIcon from "../../images/viber.png";
@@ -67,7 +67,7 @@ const Footer = () => {
           </ul>
         </nav>
         <nav className="footer_nav_contacts">
-          <h3 className="footer_nav_contacts_header">Контакти</h3>
+          <p className="footer_nav_contacts_header">Контакти</p>
           <section className="footer_contacts">
             <a href={contactNumberMenedgerOne}>+380664844563</a>
             <a href={contactNumberMenedgerTwo}>+380935612197</a>
@@ -76,7 +76,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className="footer_privacy_policy">
-        <div className="footer_avtor_policy"></div>
+        <span className="footer_avtor_policy">&copy;</span>
         <div className="footer_text_privacy_policy">2022 Всі права захищенно. InWorker</div>
       </div>
     </>

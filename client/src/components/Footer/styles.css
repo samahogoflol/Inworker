@@ -1,0 +1,71 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  margin-top: 50px;
+  height: 320px;
+  background-color: rgb(23, 46, 46);
+}
+.footer nav {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.footer .footer_nav_socials {
+  font-size: 35px;
+}
+.footer .footer_nav_socials section {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 15px;
+  gap: 20px;
+}
+.footer .footer_nav_socials img {
+  width: 60px;
+  border-radius: 50%;
+}
+.footer .footer_nav_list {
+  font-size: 25px;
+}
+.footer .footer_nav_list li {
+  margin-bottom: 10px;
+}
+.footer .footer_nav_contacts {
+  font-size: 25px;
+}
+.footer .footer_nav_contacts li {
+  margin-bottom: 10px;
+}
+.footer .footer_nav_contacts section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .footer_nav_contacts p {
+  margin-bottom: 35px;
+  color: rgb(5, 235, 235);
+}
+
+.footer_privacy_policy {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(23, 46, 46);
+}
+.footer_privacy_policy .footer_avtor_policy {
+  display: flex;
+  position: relative;
+  margin-right: 3px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(23, 46, 46);
+  border-radius: 50%;
+}
+.footer_privacy_policy .footer_text_privacy_policy {
+  margin-top: 4px;
+  font-size: larger;
+  opacity: 0.8;
+}
+.footer_privacy_policy span {
+  font-size: 25px;
+}/*# sourceMappingURL=styles.css.map */
