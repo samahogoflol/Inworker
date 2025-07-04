@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "./styles.css";
+import "./styles.scss";
 
 import telegramIcon from "../../images/telegram.png";
 import viberIcon from "../../images/viber.png";

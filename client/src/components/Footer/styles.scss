@@ -1,11 +1,16 @@
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr); // 3 колонки за замовчуванням
+  max-width: 2400px; // Максимальна ширина для дуже великих екранів
   justify-content: center;
   margin-top: 50px;
-  height: 320px;
-  background-color: $primary-bg-color;
+  height: 320px; // Фіксована висота для десктопу
+  background-color: rgb(23, 46, 46);
+  margin-left: auto; // Центрування
+  margin-right: auto; // Центрування
+  padding: 20px; // Додаємо внутрішній відступ, щоб контент не прилипав до країв
 
+  // Стилі для елемента <nav> всередині .footer
   & nav {
     margin-top: 70px;
     margin-bottom: 100px;
@@ -25,23 +30,25 @@
 
     & img {
       width: 60px;
-      border-radius: $border-radius;
+      border-radius: 50%;
     }
   }
 
   .footer_nav_list {
-    font-size: $font-size-25px;
+    font-size: 25px;
 
     & li {
       margin-bottom: 10px;
+      list-style-type: none; // Забезпечити відсутність маркерів списку
     }
   }
 
   .footer_nav_contacts {
-    font-size: $font-size-25px;
+    font-size: 25px;
 
     & li {
       margin-bottom: 10px;
+      list-style-type: none; // Забезпечити відсутність маркерів списку
     }
 
     & section {
@@ -55,30 +62,119 @@
       color: rgb(5, 235, 235);
     }
   }
+
+  // --- АДАПТИВНІСТЬ ---
+
+  // Планшетні пристрої (до 1024px)
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); // 2 колонки
+    height: auto; // Дозволити висоті адаптуватися до контенту
+    padding: 15px; // Зменшити відступи
+
+    & nav {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer_nav_socials {
+      font-size: 25px; // Зменшити розмір шрифту
+    }
+
+    .footer_nav_list,
+    .footer_nav_contacts {
+      font-size: 20px; // Зменшити розмір шрифту
+    }
+  }
+
+  // Мобільні пристрої (до 768px)
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; // 1 колонка
+    height: auto; // Забезпечити адаптивну висоту
+    padding: 15px; // Зменшити відступи
+
+    & nav {
+      margin-top: 35px;
+      margin-bottom: 35px;
+    }
+
+    .footer_nav_socials {
+      font-size: 25px;
+      & section {
+        flex-direction: row; // Залишити в рядку або змінити на колонку, якщо потрібно
+        gap: 15px;
+      }
+    }
+
+    .footer_nav_list,
+    .footer_nav_contacts {
+      font-size: 16px; // Ще зменшити розмір шрифту
+      text-align: center; // Центрувати текст для кращого вигляду
+    }
+  }
+
+  // Дуже маленькі мобільні (до 480px)
+  @media (max-width: 480px) {
+    padding: 10px; // Ще зменшити відступи
+    .footer_nav_socials {
+      font-size: 20px;
+      & img {
+        width: 50px; // Зменшити розмір іконок
+      }
+    }
+  }
 }
 
 .footer_privacy_policy {
   display: flex;
   justify-content: center;
-  background-color: $primary-bg-color;
+  align-items: center; // Центрувати по вертикалі
+  padding: 10px 0; // Додати відступи зверху/знизу
+  background-color: rgb(23, 46, 46);
 
   .footer_avtor_policy {
     display: flex;
-    position: relative;
+    justify-content: center;
+    align-items: center;
     margin-right: 3px;
     width: 30px;
     height: 30px;
-    background-color: $primary-bg-color;
-    border-radius: $border-radius;
+    background-color: rgb(23, 46, 46);
+    border-radius: 50%;
+    border: 2px solid grey; // Додаємо обід
+    color: grey; // Колір символу всередині
+    font-size: 16px; // Розмір символу "C"
   }
 
   .footer_text_privacy_policy {
     margin-top: 4px;
-    font-size: larger;
+    font-size: 16px; // Використовуємо змінну для larger
     opacity: 0.8;
+    color: white; // Забезпечити контрастність
   }
 
+  // Якщо span використовується для символу копірайту, то він буде стилізований через .footer_avtor_policy
+  // Якщо ж це окремий span для тексту, то ось його стилі:
   & span {
-    font-size: $font-size-25px;
+    font-size: 25px; // 25px
+    color: white; // Забезпечити контрастність
+  }
+
+  // --- АДАПТИВНІСТЬ ---
+  @media (max-width: 768px) {
+    flex-direction: column; // На мобільних - в стовпчик
+    text-align: center;
+    padding: 15px 0;
+
+    .footer_avtor_policy {
+      margin-right: 0; // Прибираємо відступ справа
+      margin-bottom: 4px; // Додаємо відступ знизу
+    }
+    .footer_text_privacy_policy {
+      margin-top: 0; // Прибираємо маргін
+      font-size: 14px; // Зменшити розмір шрифту
+    }
+    & span {
+      font-size: 20px; // Зменшити розмір шрифту
+    }
   }
 }
